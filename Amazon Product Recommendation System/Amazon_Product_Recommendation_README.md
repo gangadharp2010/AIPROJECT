@@ -1,0 +1,491 @@
+# Amazon Product Recommendation System — Industry Case Study
+
+## 📌 Overview
+
+This project develops and evaluates a **hybrid product recommendation system** for an e-commerce platform using product metadata and user behavior data.
+
+The recommendation engine combines:
+
+- **Content-Based Filtering** using product metadata.
+- **Collaborative Filtering** using user-product interactions.
+- **Hybrid Recommendation** by combining content and collaborative scores.
+
+The objective is to provide relevant product recommendations for both existing and new users/products while addressing challenges such as cold-start users, cold-start products, product diversity, and business constraints.
+
+---
+
+## 🎯 Objectives
+
+- Understand and clean product and user-review data.
+- Analyze product, category, pricing, discount, and rating patterns.
+- Build a content-based recommendation engine.
+- Build a collaborative filtering recommendation engine.
+- Develop a hybrid recommendation strategy.
+- Compare recommendation quality across different approaches.
+- Handle cold-start products and users.
+- Identify practical business strategies for recommendation deployment.
+- Define KPIs for measuring recommendation-system success.
+
+---
+
+## 📂 Dataset
+
+The dataset contains product and user-review information, including attributes such as:
+
+- User ID
+- Product ID
+- Product name
+- Product category
+- Product description / about product
+- Price
+- Discount
+- Rating
+- Review information
+- User-product interactions
+
+**Dataset:**  
+https://drive.google.com/file/d/1OA0wOG1epBxHAMNXun7kwNr_QsupUMzj/view?usp=sharing
+
+**Approach Document:**  
+https://docs.google.com/document/d/1Yl1eu-aWVYfqVu1Avx4tAZzd2jQpKIeNhSCrtbT02vc/edit?usp=sharing
+
+> The dataset is not included in this repository unless permitted by the dataset license.
+
+---
+
+## 📋 Project Sections
+
+### Section A — Data Understanding & Cleaning
+
+The dataset is analyzed from a product analytics perspective.
+
+The analysis covers:
+
+- Number of unique users
+- Number of unique products
+- Number of reviews
+- Top product categories
+- Price range
+- Discount distribution
+- Rating distribution
+- Missing values
+- Duplicate records
+- Invalid records and anomalies
+
+### Data Preprocessing
+
+The preprocessing pipeline includes:
+
+- Converting prices to numeric values.
+- Cleaning and parsing product categories.
+- Creating category hierarchy levels.
+- Handling missing values.
+- Removing duplicates.
+- Identifying invalid records.
+- Normalizing rating information where appropriate.
+
+### Feature Engineering
+
+Derived features may include:
+
+- `price_difference`
+- `value_for_money_score`
+- Weighted ratings
+- Discount percentage
+- Category hierarchy features
+
+---
+
+## 📊 Section B — Exploratory Data Analysis
+
+EDA focuses on identifying product and user behavior patterns.
+
+The notebook analyzes:
+
+- Most reviewed products.
+- Top categories by product count.
+- Average rating by category.
+- Discount vs actual price relationship.
+- Product engagement.
+- Highly rated products with low review counts.
+- Relationship between ratings and review volume.
+
+### Business Insights
+
+The analysis identifies actionable insights around:
+
+- Product popularity.
+- Product quality.
+- Pricing and discount strategies.
+- Category performance.
+- Customer engagement.
+- Opportunities for improving product discovery.
+
+---
+
+## 🧠 Section C — Content-Based Filtering
+
+A content-based recommendation system is developed using product metadata.
+
+### Product Representation
+
+Product information such as:
+
+- Product name
+- About product / description
+- Category
+- Price
+- Discount
+
+is transformed into numerical representations.
+
+Text features are vectorized using techniques such as:
+
+- TF-IDF
+- Cosine similarity
+
+Additional product attributes such as category, price, and discount are incorporated to improve recommendation relevance.
+
+### Recommendations
+
+The system generates the top 5 similar products for:
+
+1. A new product with no reviews.
+2. A product experiencing poor ratings / potential user dropout.
+
+### Evaluation
+
+Content-based recommendations are evaluated based on:
+
+- Relevance
+- Similarity
+- Diversity
+- Product coverage
+
+---
+
+## 👥 Section D — Collaborative Filtering
+
+A user-item interaction matrix is created using:
+
+```text
+user_id
+product_id
+rating
+```
+
+The recommendation engine applies collaborative filtering using either:
+
+- User-User Collaborative Filtering
+- Item-Item Collaborative Filtering
+
+Similarity can be calculated using:
+
+- Cosine similarity
+- Pearson correlation
+
+### Recommendations
+
+The system recommends the top 5 unseen products for users based on their historical interactions.
+
+---
+
+## 🔀 Section E — Hybrid Recommendation System
+
+A hybrid recommendation engine combines content-based and collaborative filtering.
+
+The score fusion strategy is:
+
+```text
+Hybrid Score =
+0.6 × CF Score +
+0.4 × Content Score
+```
+
+The final recommendation list is generated by combining the strengths of both approaches.
+
+### Why Hybrid?
+
+Content-based filtering can help when:
+
+- A product is new.
+- A product has few or no reviews.
+
+Collaborative filtering can help when:
+
+- Sufficient user interaction history exists.
+- Similar users or products can be identified.
+
+Combining both approaches helps improve recommendation coverage and reduce cold-start limitations.
+
+---
+
+## 🧪 Hybrid Evaluation
+
+The hybrid system is evaluated against individual recommendation approaches.
+
+Evaluation scenarios include:
+
+### Cold-Start Product
+
+Test recommendation quality when a product has no historical reviews.
+
+### Cold-Start User
+
+Test recommendation quality when a user has very limited interaction history.
+
+### Returning User
+
+Use historical user-product interactions to generate personalized recommendations.
+
+---
+
+## 📈 Recommendation Evaluation
+
+The project evaluates recommendation systems using relevant measures such as:
+
+| Metric / Measure | Purpose |
+|---|---|
+| Precision@K | Measures relevance of recommended items |
+| Recall@K | Measures relevant items successfully recommended |
+| Hit Rate@K | Measures whether relevant items appear in top-K |
+| Coverage | Measures how much of the catalog can be recommended |
+| Diversity | Measures variety among recommendations |
+| Similarity | Measures content relevance |
+| Cold-Start Performance | Measures behavior with limited historical data |
+
+The exact metrics used depend on the available interaction and evaluation data.
+
+---
+
+## 💼 Business Strategy
+
+### New Users
+
+For users with little or no history, recommendations can combine:
+
+- Popular products
+- Highly rated products
+- Category popularity
+- Trending products
+- Product availability
+- Content-based similarity
+
+### Returning Users
+
+For users with sufficient interaction history:
+
+- Collaborative filtering
+- Personalized product similarity
+- Recent purchases
+- Browsing behavior
+- Category preferences
+
+can be combined to generate personalized recommendations.
+
+### Products With No Ratings
+
+Products without ratings can still be recommended using:
+
+- Product metadata
+- Category
+- Product description
+- Price
+- Discount
+- Content similarity
+- Popularity priors
+
+---
+
+## 🚀 Production Deployment Strategy
+
+A production recommendation platform could use the following architecture:
+
+```text
+User Activity
+     │
+     ▼
+Data Collection
+     │
+     ▼
+Feature Store
+     │
+     ├───────────────┐
+     ▼               ▼
+Content Model    Collaborative Model
+     │               │
+     └───────┬───────┘
+             ▼
+      Hybrid Ranking
+             │
+             ▼
+     Business Rules
+             │
+             ▼
+ Recommendation API
+             │
+             ▼
+       User / App
+```
+
+### Potential Technologies
+
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- SciPy
+- PostgreSQL / SQL
+- Redis
+- Apache Kafka
+- FastAPI
+- Docker
+- Kubernetes
+- Cloud infrastructure
+- Feature Store
+- Model monitoring tools
+
+---
+
+## 📊 Business Constraints
+
+A production recommender should consider more than model similarity.
+
+Potential constraints include:
+
+- Product availability
+- Inventory levels
+- Recent purchases
+- Price
+- Discounts
+- Business priorities
+- Product freshness
+- User preferences
+- Diversity
+- Seller quality
+- Customer experience
+
+These constraints can be applied as filtering and ranking rules after generating candidate recommendations.
+
+---
+
+## 📌 KPIs
+
+Amazon-style recommendation systems can track:
+
+### Recommendation Quality
+
+- Precision@K
+- Recall@K
+- Hit Rate@K
+- NDCG@K
+- Catalog coverage
+- Recommendation diversity
+
+### Business Metrics
+
+- Click-through rate
+- Conversion rate
+- Revenue per user
+- Average order value
+- Add-to-cart rate
+- Recommendation-driven purchases
+- Repeat purchase rate
+
+### Customer Experience
+
+- Engagement
+- Session duration
+- Product discovery
+- Customer retention
+- Recommendation satisfaction
+
+---
+
+## 🛠️ Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+- SciPy
+- Google Colab
+- Jupyter Notebook
+
+---
+
+## 📓 Notebook
+
+The complete implementation is available in the **Google Colab notebook**.
+
+The notebook contains:
+
+- Data loading
+- Data cleaning
+- Feature engineering
+- Exploratory Data Analysis
+- Product similarity
+- Content-based recommendations
+- User-item matrix
+- Collaborative filtering
+- Hybrid recommendation
+- Recommendation evaluation
+- Cold-start analysis
+- Business insights
+- Deployment strategy
+
+---
+
+## 📁 Project Structure
+
+```text
+Amazon-Product-Recommendation-System/
+│
+├── README.md
+└── Amazon_Product_Recommendation_System.ipynb
+```
+
+> The dataset is not included in the repository unless permitted by the dataset license.
+
+---
+
+## 🚀 How to Run
+
+1. Clone the repository.
+2. Open the `.ipynb` notebook in Google Colab or Jupyter Notebook.
+3. Download the dataset from the provided source.
+4. Upload the dataset to the notebook environment.
+5. Update the dataset path if required.
+6. Run the notebook cells sequentially.
+
+---
+
+## 📌 Expected Outcome
+
+The project aims to deliver:
+
+- A cleaned and analyzed product dataset.
+- Product and category-level business insights.
+- A content-based recommendation engine.
+- A collaborative filtering recommendation engine.
+- A hybrid recommendation system.
+- Cold-start handling strategies.
+- Recommendation quality evaluation.
+- A practical production deployment strategy.
+- Business KPIs for measuring recommendation-system success.
+
+---
+
+## 👤 Author
+
+**Gangadhar Panda**
+
+---
+
+## 📌 Conclusion
+
+This case study demonstrates how recommendation systems can combine **product content and user behavior** to deliver personalized e-commerce recommendations.
+
+The hybrid approach provides a practical framework for balancing content similarity, collaborative behavior, personalization, cold-start handling, product diversity, and real-world business constraints.
