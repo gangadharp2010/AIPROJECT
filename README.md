@@ -8,27 +8,30 @@ Orion AI Labs builds AI writing assistants for enterprise clients. Their product
 
 As part of the LLM Optimization task force, you are tasked with building a Parameter-Efficient Fine-Tuning pipeline using LoRA (Low-Rank Adaptation). Instead of retraining billions of parameters, LoRA injects small, trainable adapter layers into the model. Your goal is to fine-tune TinyLlama-1.1B on an instruction-following dataset and demonstrate measurable improvement in response quality.
 
- Your goal is to implement a complete LoRA fine-tuning pipeline. Success is measured not just by code execution, but by the quality of improvement in the model's outputs.
-Key Technical Pillars:
-Base Model Evaluation: Testing the pre-trained model's ability before any fine-tuning.
+**Your goal is to implement a complete LoRA fine-tuning pipeline. Success is measured not just by code execution, but by the quality of improvement in the model's outputs.**
 
-Dataset Engineering: Transforming raw instruction-response pairs into the conversational structure required by the model.
+**Key Technical Pillars:**
+**Base Model Evaluation**: Testing the pre-trained model's ability before any fine-tuning.
 
-LoRA Configuration & Injection: Applying Low-Rank Adapter layers to specific modules, reducing trainable parameters to under 1%.
+**Dataset Engineering:** Transforming raw instruction-response pairs into the conversational structure required by the model.
 
-Supervised Fine-Tuning: Training the adapter layers using SFTTrainer.
+**LoRA Configuration & Injection**: Applying Low-Rank Adapter layers to specific modules, reducing trainable parameters to under 1%.
 
-Adapter Persistence & Evaluation: Saving the lightweight adapter and comparing outputs against the baseline.
+**Supervised Fine-Tuning**: Training the adapter layers using SFTTrainer.
 
-Requires a GPU runtime (T4 is sufficient). We will utilize the following stack:
+**Adapter Persistence & Evaluation**: Saving the lightweight adapter and comparing outputs against the baseline.
 
-Base Model: TinyLlama/TinyLlama-1.1B-Chat-v1.0.
+Requires a GPU runtime (T4 is sufficient). 
 
-Fine-Tuning Framework: Hugging Face TRL + PEFT (LoRA).
+We will utilize the following stack:
 
-Dataset: Databricks Dolly-15K.
+**Base Model: TinyLlama/TinyLlama-1.1B-Chat-v1.0.**
 
-Compute: Google Colab with T4 GPU.
+**Fine-Tuning Framework: Hugging Face TRL + PEFT (LoRA).**
+
+**Dataset: Databricks Dolly-15K.**
+
+**Compute: Google Colab with T4 GPU.**
 
 # Install production dependencies
 !pip install -U transformers trl peft datasets accelerate torch -q
