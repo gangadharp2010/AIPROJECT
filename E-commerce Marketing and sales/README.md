@@ -33,7 +33,6 @@ The primary objectives of this project are to:
 
 The project dataset is available in the following Google Drive folder:
 
-[Dataset Folder](https://drive.google.com/drive/folders/1Qt1HfSoTyCKiyDy2frR-hYOT9UvfwqG7?usp=sharing)
 
 ### Dataset Description
 
