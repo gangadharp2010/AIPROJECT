@@ -1,6 +1,6 @@
 # 🤖 AI / ML Project Portfolio
 
-> A practical collection of **Machine Learning, Deep Learning, Generative AI, RAG, Computer Vision, Recommendation Systems, and Data Analytics projects** focused on solving real-world business and engineering problems.
+> A practical collection of **Machine Learning, Deep Learning, Generative AI, RAG, Computer Vision, Recommendation Systems, and Data Analytics projects** focused on solving real-world business and engineering challenges.
 
 [![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)](https://www.python.org/)
 [![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter)](https://jupyter.org/)
@@ -13,7 +13,7 @@
 
 ## 📌 About This Repository
 
-This repository represents my **AI/ML learning and project portfolio**, covering the journey from traditional data analytics and machine learning to modern **Generative AI, Retrieval-Augmented Generation (RAG), Computer Vision, and LLM fine-tuning**.
+This repository represents my **AI/ML learning and project portfolio**, covering the journey from traditional data analytics and machine learning to modern **Generative AI, Retrieval-Augmented Generation, Computer Vision, Recommendation Systems, and LLM-based solutions**.
 
 The projects focus on practical business and technical problems including:
 
@@ -26,6 +26,7 @@ The projects focus on practical business and technical problems including:
 - 👁️ Computer vision
 - 🌍 Country segmentation
 - 🎯 Ad targeting
+- 💰 Sales forecasting from campaign data
 - 🔎 Domain-specific RAG
 - 🧠 LLM fine-tuning using LoRA / PEFT
 
@@ -206,6 +207,27 @@ Focus areas:
 
 📂 **Project:**  
 `09.Ad Targeting System/`
+
+---
+
+### 12. Predicting Sales from Campaign Data
+
+**Domain:** Marketing Analytics / Sales Forecasting
+
+Focus areas:
+
+- Campaign performance analysis
+- Sales prediction from marketing inputs
+- Feature engineering and regression modeling
+- ROI-oriented business insight generation
+- Budget and campaign optimization
+
+**Technologies:**
+
+`Python` `Pandas` `NumPy` `Scikit-learn` `XGBoost` `Matplotlib` `Seaborn`
+
+📂 **Project:**  
+`12.Predicting Sales from Campaign Data/`
 
 ---
 
@@ -472,6 +494,7 @@ AIPROJECT/
 ├── 09.Ad Targeting System/
 ├── 10.Build a Domain Specific RAG/
 ├── 11.Project TuneCraft(LORA FINE TUNING)/
+├── 12.Predicting Sales from Campaign Data/
 ├── README.md
 └── .gitignore
 ```
@@ -544,9 +567,6 @@ LLM Generation
        │
        ▼
 Grounded Response
-       │
-       ▼
-Evaluation
 ```
 
 ---
@@ -558,7 +578,7 @@ Evaluation
 | 📊 Data Analytics | E-commerce, customer and business analytics |
 | 🤖 Machine Learning | Classification, regression, clustering |
 | 🎯 Recommendation Systems | Product personalization |
-| 📈 Predictive Analytics | CTR, ride-hailing, content performance |
+| 📈 Predictive Analytics | CTR, ride-hailing, content performance, campaign sales forecasting |
 | 👁️ Computer Vision | YOLOv8, image anonymization |
 | 🧠 Deep Learning | Neural networks and vision |
 | ✨ Generative AI | LLM applications |
