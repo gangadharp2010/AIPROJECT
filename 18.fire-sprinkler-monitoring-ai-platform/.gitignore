@@ -1,0 +1,8 @@
+**/bin/
+**/obj/
+**/node_modules/
+**/.angular/
+**/__pycache__/
+**/.venv/
+.env
+terraform.tfstate*

@@ -1,0 +1,122 @@
+[
+  {
+    "pointId": "WET-001",
+    "systemType": "WET",
+    "deviceType": "WATER_FLOW_SWITCH",
+    "monitoringValue": "Flow / No Flow",
+    "classification": "ALARM",
+    "normalState": "NO_FLOW"
+  },
+  {
+    "pointId": "WET-002",
+    "systemType": "WET",
+    "deviceType": "WATER_PRESSURE_SWITCH",
+    "monitoringValue": "Pressure abnormal",
+    "classification": "SUPERVISORY",
+    "normalState": "NORMAL"
+  },
+  {
+    "pointId": "WET-003",
+    "systemType": "WET",
+    "deviceType": "MAIN_CONTROL_VALVE",
+    "monitoringValue": "Open / Closed",
+    "classification": "SUPERVISORY",
+    "normalState": "OPEN"
+  },
+  {
+    "pointId": "WET-004",
+    "systemType": "WET",
+    "deviceType": "FIRE_PUMP",
+    "monitoringValue": "Running",
+    "classification": "STATUS",
+    "normalState": "STOPPED"
+  },
+  {
+    "pointId": "WET-005",
+    "systemType": "WET",
+    "deviceType": "FIRE_PUMP_CONTROLLER",
+    "monitoringValue": "Fault",
+    "classification": "TROUBLE",
+    "normalState": "NORMAL"
+  },
+  {
+    "pointId": "WET-006",
+    "systemType": "WET",
+    "deviceType": "WATER_TANK",
+    "monitoringValue": "Low level",
+    "classification": "SUPERVISORY",
+    "normalState": "NORMAL"
+  },
+  {
+    "pointId": "WET-007",
+    "systemType": "WET",
+    "deviceType": "WATER_SUPPLY",
+    "monitoringValue": "Low pressure",
+    "classification": "SUPERVISORY",
+    "normalState": "NORMAL"
+  },
+  {
+    "pointId": "DRY-001",
+    "systemType": "DRY",
+    "deviceType": "AIR_PRESSURE_SWITCH",
+    "monitoringValue": "Low air pressure",
+    "classification": "SUPERVISORY",
+    "normalState": "NORMAL"
+  },
+  {
+    "pointId": "DRY-002",
+    "systemType": "DRY",
+    "deviceType": "AIR_PRESSURE_SWITCH",
+    "monitoringValue": "High air pressure",
+    "classification": "SUPERVISORY",
+    "normalState": "NORMAL"
+  },
+  {
+    "pointId": "DRY-003",
+    "systemType": "DRY",
+    "deviceType": "DRY_PIPE_VALVE",
+    "monitoringValue": "Trip / Operated",
+    "classification": "SUPERVISORY",
+    "normalState": "NORMAL"
+  },
+  {
+    "pointId": "DRY-004",
+    "systemType": "DRY",
+    "deviceType": "WATER_FLOW_SWITCH",
+    "monitoringValue": "Water flow",
+    "classification": "ALARM",
+    "normalState": "NO_FLOW"
+  },
+  {
+    "pointId": "DRY-005",
+    "systemType": "DRY",
+    "deviceType": "AIR_COMPRESSOR",
+    "monitoringValue": "Running",
+    "classification": "STATUS",
+    "normalState": "STOPPED"
+  },
+  {
+    "pointId": "DRY-006",
+    "systemType": "DRY",
+    "deviceType": "AIR_COMPRESSOR",
+    "monitoringValue": "Fault",
+    "classification": "TROUBLE",
+    "normalState": "NORMAL"
+  },
+  {
+    "pointId": "DRY-007",
+    "systemType": "DRY",
+    "deviceType": "WATER_SUPPLY_PRESSURE",
+    "monitoringValue": "Low pressure",
+    "classification": "SUPERVISORY",
+    "normalState": "NORMAL"
+  },
+  {
+    "pointId": "DRY-008",
+    "systemType": "DRY",
+    "deviceType": "MAIN_CONTROL_VALVE",
+    "monitoringValue": "Open / Closed",
+    "classification": "SUPERVISORY",
+    "normalState": "OPEN"
+  }
+]

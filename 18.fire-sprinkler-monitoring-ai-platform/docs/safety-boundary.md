@@ -1,0 +1,3 @@
+# Safety Boundary
+
+This repository is a portfolio demonstrator, not a certified/listed FACP or fire protection controller. No command path may actuate, disable, reset, silence, bypass or change field equipment. ML/LLM output must never determine, suppress, delay or reclassify actual fire alarms. Local panel annunciation and approved life-safety functions remain independent. All point classifications, delays, latching, restoration and cause/effect behavior require approval from the fire protection engineer, panel manufacturer and authority having jurisdiction. Use only a vendor-approved read-only integration.
