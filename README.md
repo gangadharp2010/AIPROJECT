@@ -1,5 +1,10 @@
 # 🤖 AI / ML Project Portfolio
 
+<p align="center">
+  <img src="assets/ai_ml_portfolio_banner.svg" alt="AI and ML Engineering Portfolio banner" width="100%" />
+</p>
+
+
 > A practical collection of **Machine Learning, Deep Learning, Generative AI, RAG, Computer Vision, Recommendation Systems, and Data Analytics projects** focused on solving real-world business and engineering problems.
 
 [![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)](https://www.python.org/)
@@ -37,6 +42,10 @@ The projects focus on practical business and technical problems including:
 The overall objective is to develop **end-to-end AI solutions**, from understanding the problem and data to model development, evaluation, explainability, and deployment-oriented thinking.
 
 ---
+
+<p align="center">
+  <img src="assets/ai_ml_project_map.svg" alt="Portfolio map showing data analytics, machine learning, computer vision, generative AI and trustworthy AI" width="100%" />
+</p>
 
 # 📚 Project Portfolio
 
@@ -277,7 +286,7 @@ Focus areas:
 `Python` `Pandas` `NumPy` `Scikit-learn` `XGBoost` `SHAP` `Matplotlib` `Seaborn`
 
 📂 **Project:**  
-`15.AI-Powered Customer Retention Analytics/`
+[Open AI-Powered Customer Retention Analytics](15.AI-Powered%20Customer%20Retention%20Analytics/)
 
 ---
 
@@ -517,7 +526,7 @@ Focus areas:
 `Python` `Pandas` `NumPy` `Scikit-learn` `Matplotlib` `Seaborn` `Jupyter`
 
 📂 **Project:**  
-`15.Fundamental Stock Analysis AI Project/`
+[Open Fundamental Stock Analysis AI Project](15.Fundamental%20Stock%20Analysis%20AI%20Project/README.md)
 ---
 
 # 🧠 Skills & Technologies
