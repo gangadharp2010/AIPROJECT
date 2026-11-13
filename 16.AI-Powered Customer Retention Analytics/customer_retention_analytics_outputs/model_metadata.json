@@ -1,0 +1,52 @@
+{
+  "created_utc": "2026-11-13T20:00:55.580188Z",
+  "target_column": "Churn",
+  "id_column": "customerID",
+  "selected_model": "Logistic Regression",
+  "decision_threshold": 0.32000000000000006,
+  "risk_bands": {
+    "Low": "< 0.40",
+    "Medium": "0.40 - < 0.70",
+    "High": ">= 0.70"
+  },
+  "test_metrics": {
+    "model": "Logistic Regression",
+    "threshold": 0.32000000000000006,
+    "accuracy": 0.6685592618878637,
+    "precision": 0.44046094750320103,
+    "recall": 0.9197860962566845,
+    "f1": 0.5956709956709957,
+    "roc_auc": 0.8458084683148621,
+    "pr_auc": 0.6522479030585678
+  },
+  "feature_columns": [
+    "gender",
+    "SeniorCitizen",
+    "Partner",
+    "Dependents",
+    "tenure",
+    "PhoneService",
+    "MultipleLines",
+    "InternetService",
+    "OnlineSecurity",
+    "OnlineBackup",
+    "DeviceProtection",
+    "TechSupport",
+    "StreamingTV",
+    "StreamingMovies",
+    "Contract",
+    "PaperlessBilling",
+    "PaymentMethod",
+    "MonthlyCharges",
+    "TotalCharges",
+    "tenure_band",
+    "service_count",
+    "total_to_monthly_ratio"
+  ],
+  "limitations": [
+    "Cross-sectional sample dataset; no temporal validation.",
+    "Predicted risk is not causal evidence that an intervention will prevent churn.",
+    "Threshold and risk bands require business validation.",
+    "Do not use for automated adverse customer decisions."
+  ]
+}
