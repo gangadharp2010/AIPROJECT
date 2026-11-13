@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+trip_buddy.db
+.gradio/
+.DS_Store
+database/conversation_memory.db
+database/conversation_memory.db-shm
+database/conversation_memory.db-wal

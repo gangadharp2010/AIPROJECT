@@ -1,0 +1,16 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.git/
+.vscode/
+.idea/
+.env
+.env.*
+.pytest_cache/
+.ipynb_checkpoints/
+*.log
+database/*.db
+database/*.sqlite
+database/*.sqlite3
+.cache/
