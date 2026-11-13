@@ -205,17 +205,123 @@ For the intended Colab workflow, a local environment is not required because the
 - Model monitoring, drift detection, and experiment tracking with MLflow.
 - Batch scoring API or dashboard for integration with CRM platforms.
 
+
+
+## Executed Notebook Results
+
+The notebook was executed on the IBM Telco Customer Churn sample dataset on **13 November 2026**. The run loaded **7,043 customers and 21 source columns**. The observed churn distribution was:
+
+- Retained: 5,174 customers (73.46%)
+- Churned: 1,869 customers (26.54%)
+- Missing values: 11 in `TotalCharges`; no duplicate rows were removed.
+
+### Model comparison
+
+The models were compared on the validation set using ROC-AUC and PR-AUC. Logistic Regression ranked first by PR-AUC, followed by Random Forest and Extra Trees.
+
+| Model | Validation ROC-AUC | Validation PR-AUC | Recall at 0.50 | Precision at 0.50 | F1 at 0.50 |
+|---|---:|---:|---:|---:|---:|
+| Logistic Regression | 0.8515 | 0.6761 | 0.7826 | 0.5258 | 0.6290 |
+| Random Forest | 0.8393 | 0.6452 | 0.6288 | 0.6084 | 0.6184 |
+| Extra Trees | 0.8343 | 0.6265 | 0.6689 | 0.5780 | 0.6202 |
+
+**Selected model:** Logistic Regression. The validation-set F2 threshold search selected a decision threshold of approximately **0.32**, prioritizing recall over precision.
+
+### Held-out test-set performance
+
+The selected model and threshold were evaluated on the held-out test split (1,409 customers).
+
+| Metric | Test result |
+|---|---:|
+| Accuracy | 0.6686 |
+| Precision | 0.4405 |
+| Recall | 0.9198 |
+| F1-score | 0.5957 |
+| ROC-AUC | 0.8458 |
+| PR-AUC | 0.6522 |
+| Decision threshold | 0.32 |
+
+At this threshold, the model identifies a high proportion of churners (recall approximately 92%), while precision is approximately 44%. This is a recall-oriented operating point: a substantial number of retained customers will also be flagged, so contact capacity and intervention cost should be considered before using it operationally.
+
+### Leading predictive signals
+
+The top features by permutation importance on the test set were:
+
+1. Contract — 0.0522 mean ROC-AUC decrease when shuffled.
+2. InternetService — 0.0413.
+3. Total-to-monthly-charge ratio — 0.0331.
+4. MonthlyCharges — 0.0275.
+5. Tenure band — 0.0111.
+6. Tenure — 0.0103.
+
+These are predictive associations in this sample, not evidence that changing a feature will cause churn to change. SHAP was not run in this execution; permutation importance was used for the reported feature analysis.
+
+### Customer risk segmentation
+
+The final pipeline scored all 7,043 customers. The notebook applied the configured probability bands (Low below 0.40, Medium from 0.40 to below 0.70, High at or above 0.70).
+
+| Risk segment | Customers | Share of customers | Average predicted churn probability | Observed churn rate |
+|---|---:|---:|---:|---:|
+| Low | 3,547 | 50.36% | 14.62% | 6.32% |
+| Medium | 1,775 | 25.20% | 54.70% | 30.08% |
+| High | 1,721 | 24.44% | 82.28% | 64.56% |
+
+The high-risk group is the priority segment for further review and carefully tested retention outreach. The model's risk estimates should be monitored and calibrated before production use.
+
+### Illustrative retention economics
+
+The notebook's scenario calculator used the following editable assumptions: 15% hypothetical save rate, 60% gross margin, six expected retained months, $15 offer cost per contacted customer, and $2 contact cost per customer.
+
+| Scenario output | Value |
+|---|---:|
+| High-risk customers considered | 1,721 |
+| Expected saved customers (assumption-based) | 258.15 |
+| Estimated value per saved customer | $253.26 |
+| Estimated campaign cost | $29,257.00 |
+| Scenario retained value | $65,379.07 |
+| Scenario net value | $36,122.07 |
+
+**This is a hypothetical scenario, not a measured campaign result or causal estimate.** Replace the save-rate and cost assumptions with experimental campaign evidence before using the economics for decisions.
+
+## Executed Artifacts
+
+The executed notebook and generated outputs are available in this project folder:
+
+- [Executed Colab notebook](./AI_Powered_Customer_Retention_Analytics%20(1).ipynb)
+- [Generated output archive](./customer_retention_analytics_outputs.zip)
+- [Model comparison](./customer_retention_analytics_outputs/model_comparison.csv)
+- [Test evaluation metrics](./customer_retention_analytics_outputs/test_evaluation_metrics.csv)
+- [Risk segment summary](./customer_retention_analytics_outputs/risk_segment_summary.csv)
+- [Permutation feature importance](./customer_retention_analytics_outputs/permutation_feature_importance.csv)
+- [Retention economics scenario](./customer_retention_analytics_outputs/retention_economics_scenario.csv)
+- [Model metadata](./customer_retention_analytics_outputs/model_metadata.json)
+
+The output directory also contains the scored customer dataset, prioritized retention list, threshold analysis, and serialized model pipeline.
+
+### Execution note
+
+The Colab runtime printed package dependency compatibility warnings after upgrading pandas and NumPy. The recorded run nevertheless completed the model training, evaluation, scoring, and artifact-export cells. For a more reproducible Colab environment, pin compatible package versions rather than always upgrading to the newest releases. The optional SHAP cell was intentionally skipped in this run.
+
+
 ## Project Structure
 
 ```text
 16.AI-Powered Customer Retention Analytics/
 ├── README.md
 ├── requirements.txt
-└── AI_Powered_Customer_Retention_Analytics.ipynb
+├── AI_Powered_Customer_Retention_Analytics (1).ipynb  # Executed notebook
+├── customer_retention_analytics_outputs.zip
+└── customer_retention_analytics_outputs/
+    ├── customer_churn_pipeline.joblib
+    ├── customer_churn_scores.csv
+    ├── model_comparison.csv
+    ├── model_metadata.json
+    ├── permutation_feature_importance.csv
+    ├── retention_economics_scenario.csv
+    ├── retention_priority_customers.csv
+    ├── risk_segment_summary.csv
+    ├── test_evaluation_metrics.csv
+    └── threshold_analysis.csv
 ```
-
-The notebook can be uploaded to this folder in the repository after downloading it from the conversation.
-
----
 
 **Project focus:** connect churn prediction with explainability, risk prioritization, and measurable customer-retention planning.
