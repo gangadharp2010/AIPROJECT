@@ -1,5 +1,24 @@
 # Fundamental Stock Analysis AI Agent
 
+<p align="center">
+  <img src="assets/fundamental_stock_analysis_banner.svg" alt="Fundamental Stock Analysis AI Agent banner" width="100%" />
+</p>
+
+<p align="center">
+  <a href="#what-it-does">Features</a> ·
+  <a href="#how-the-analysis-works">Architecture</a> ·
+  <a href="#getting-started">Quick Start</a> ·
+  <a href="#run-with-docker">Docker</a>
+</p>
+
+[![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-UI-FF4B4B?logo=streamlit&logoColor=white)](https://streamlit.io/)
+[![OpenAI](https://img.shields.io/badge/OpenAI-LLM-412991?logo=openai&logoColor=white)](https://platform.openai.com/)
+[![Yahoo Finance](https://img.shields.io/badge/Data-Yahoo%20Finance-6001D2)](https://finance.yahoo.com/)
+[![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?logo=docker&logoColor=white)](https://www.docker.com/)
+
+
+
 An AI-assisted stock research application that brings together company financials, recent news headlines, risk commentary, peer-multiple context, and an illustrative discounted cash flow (DCF) scenario into one readable research brief.
 
 The project is built in Python with a Streamlit interface, Yahoo Finance data retrieval through `yfinance`, and OpenAI-powered specialist agents. It also supports command-line report generation and containerized execution with Docker.
@@ -76,6 +95,13 @@ flowchart TD
 ```
 
 ## Architecture
+
+### Agent workflow
+
+<p align="center">
+  <img src="assets/fundamental_analysis_workflow.svg" alt="Multi-agent stock analysis workflow" width="100%" />
+</p>
+
 
 The code is organized around specialist agents and reusable data tools.
 
