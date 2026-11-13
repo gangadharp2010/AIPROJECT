@@ -49,506 +49,259 @@ The overall objective is to develop **end-to-end AI solutions**, from understand
 
 # 📚 Project Portfolio
 
+The portfolio below is aligned with the project directories currently present in the repository. Descriptions summarize the checked-in notebooks, source files, reports, and documentation; they do not imply production deployment.
+
 ## 🟢 Machine Learning & Data Analytics
 
 ### 01. E-commerce Marketing & Sales Analytics
+**Domain:** Business Analytics / Customer Intelligence
 
-**Domain:** Business Analytics
+Analyze customer transactions and sales behavior to support acquisition, retention, and revenue decisions.
 
-Focus areas:
+**Focus areas:** RFM segmentation, cohort retention, customer lifetime value, new-versus-existing customer revenue, product performance, seasonality, daily sales trends, and business recommendations.
 
-- Customer acquisition and retention
-- RFM customer segmentation
-- Cohort analysis
-- Customer Lifetime Value (CLV)
-- Product and sales performance
-- Business KPI analysis
+**Repository artifacts:** Project README, approach document, business-case archive, and final project report.
 
-**Technologies:**
+**Technologies:** Python, Pandas, NumPy, Matplotlib, Seaborn.
 
-`Python` `Pandas` `NumPy` `Matplotlib` `Seaborn`
+📂 [Project folder](01.E-commerce%20Marketing%20and%20sales/) · [README](01.E-commerce%20Marketing%20and%20sales/README.md)
 
-📂 **Project:**  
-`01.E-commerce Marketing and sales/`
+### 02. CO₂ Emission Analysis & Prediction
+**Domain:** Environmental Analytics / Regression
 
----
+Explore vehicle characteristics and their relationship with CO₂ emissions through data analysis and regression-oriented modeling.
 
-### 02. CO₂ Emission Prediction
+**Focus areas:** Data quality, exploratory analysis, feature relationships, regression modeling, feature interpretation, and environmental insights.
 
-**Domain:** Regression / Environmental Analytics
+**Repository artifacts:** Emissions dataset, dataset description, approach document, and final visualization/report PDF.
 
-Focus areas:
+📂 [Project folder](02.CO2%20emission/) · [README](02.CO2%20emission/README.md)
 
-- Vehicle CO₂ emission analysis
-- Data preprocessing
-- Feature engineering
-- Regression modeling
-- Feature importance
-- Business and environmental insights
-
-**Technologies:**
-
-`Python` `Pandas` `NumPy` `Scikit-learn` `Matplotlib` `Seaborn`
-
-📂 **Project:**  
-`02.CO2 emission/`
-
----
-
-### 03. Ad Click Prediction
-
+### 03. Ad Click / Click-Through Rate (CTR) Prediction
 **Domain:** Digital Advertising / Classification
 
-Focus areas:
+Build a predictive workflow to estimate whether an ad impression is likely to result in a click.
 
-- Click-Through Rate (CTR) prediction
-- User engagement prediction
-- Classification modeling
-- Feature engineering
-- Model evaluation
+**Focus areas:** CTR prediction, user/ad feature analysis, data preprocessing, feature engineering, class-imbalance considerations, and classification evaluation.
 
-**Technologies:**
+**Repository artifacts:** Notebook, project report, dataset archive, and project README.
 
-`Python` `Pandas` `Scikit-learn` `Jupyter` `Google Colab`
+**Technologies:** Python, Pandas, scikit-learn, Jupyter, Google Colab.
 
-📂 **Project:**  
-`03.Ad click prediction/`
+📂 [Project folder](03.Ad%20click%20prediction/) · [README](03.Ad%20click%20prediction/Ad_Click_Prediction_README.md) · [Notebook](03.Ad%20click%20prediction/Click_Through_Rate_(CTR)_Prediction_Project.ipynb)
 
----
-
-### 04. AI Solutions for Uber
-
+### 04. AI Solutions for Uber — NCR Ride Completion Prediction
 **Domain:** Ride-Hailing / Predictive Analytics
 
-Focus areas:
+Analyze NCR ride-booking records and model ride completion outcomes to support operational understanding of ride-hailing bookings.
 
-- Ride completion prediction
-- Driver cancellation analysis
-- Trip risk analysis
-- Operational insights
-- Model explainability
-- Fairness-oriented analysis
+**Focus areas:** Ride completion prediction, booking and trip attributes, cancellation-related patterns, feature analysis, model evaluation, and operational insights.
 
-**Technologies:**
+**Repository artifacts:** Booking dataset, notebook, approach document, report PDFs, and requirements file.
 
-`Python` `Pandas` `NumPy` `Scikit-learn` `XGBoost` `LightGBM` `CatBoost` `SHAP`
-
-📂 **Project:**  
-`04.AI Solutions for Uber/`
-
----
+📂 [Project folder](04.AI%20Solutions%20for%20Uber/) · [README](04.AI%20Solutions%20for%20Uber/README.md) · [Notebook](04.AI%20Solutions%20for%20Uber/NCR_Ride_Completion_Prediction%20complete.ipynb)
 
 ### 05. YouTube Shorts Performance Prediction
+**Domain:** Content Analytics / Classification
 
-**Domain:** Content Analytics / Prediction
+Analyze video and publishing characteristics associated with YouTube Shorts engagement and predict performance categories.
 
-Focus areas:
+**Focus areas:** Engagement-rate analysis, low/medium/high performance grouping, video duration, upload timing, content category, title characteristics, feature importance, and creator-facing recommendations.
 
-- Shorts performance prediction
-- Engagement analysis
-- Upload timing analysis
-- Video duration analysis
-- Category analysis
-- Title characteristics
+**Repository artifacts:** Dataset, notebook, approach document, final report PDF, and README.
 
-**Technologies:**
+**Technologies:** Python, Pandas, NumPy, Matplotlib, Seaborn, scikit-learn.
 
-`Python` `Pandas` `NumPy` `Matplotlib` `Seaborn` `Scikit-learn`
-
-📂 **Project:**  
-`05.YouTube Shorts Performance Prediction/`
-
----
+📂 [Project folder](05.YouTube%20Shorts%20Performance%20Prediction/) · [README](05.YouTube%20Shorts%20Performance%20Prediction/README.md) · [Notebook](05.YouTube%20Shorts%20Performance%20Prediction/youtubeShortsPerformance.ipynb)
 
 ### 06. Amazon Product Recommendation System
+**Domain:** Recommendation Systems / E-commerce Personalization
 
-**Domain:** Recommendation Systems / E-commerce
+Explore recommendation approaches for matching customers with relevant products.
 
-Focus areas:
+**Focus areas:** Product recommendation, recommendation methodology, personalization, model validation, and evaluation.
 
-- Product recommendation
-- Content-based filtering
-- Collaborative filtering
-- Hybrid recommendation strategy
-- Personalization
+**Repository artifacts:** Notebook, project-specific README, approach document, final report PDF, validation report, and archive.
 
-**Technologies:**
-
-`Python` `Pandas` `NumPy` `Scikit-learn` `SciPy`
-
-📂 **Project:**  
-`06.Amazon Product Recommendation System/`
-
----
+📂 [Project folder](06.Amazon%20Product%20Recommendation%20System/) · [README](06.Amazon%20Product%20Recommendation%20System/Amazon_Product_Recommendation_README.md) · [Notebook](06.Amazon%20Product%20Recommendation%20System/Amazon_Product_Recommendation_System%20(11).ipynb)
 
 ### 08. Country Segmentation for Global Development Strategy
-
 **Domain:** Unsupervised Learning / Clustering
 
-Focus areas:
+Use country-level indicators to explore groups with similar socioeconomic and development profiles.
 
-- Socioeconomic data analysis
-- Country clustering
-- Segment discovery
-- Development pattern analysis
-- Strategic segmentation
+**Focus areas:** Data analysis, feature preparation, clustering, segment interpretation, and development-oriented insights.
 
-**Technologies:**
+**Repository artifacts:** Country dataset, dataset description, approach document, notebook, and submitted report PDF.
 
-`Python` `Pandas` `NumPy` `Scikit-learn` `Clustering`
+📂 [Project folder](08.Uncovering%20Hidden%20Country%20Segments%20for%20Global%20Development%20Strategy/)
 
-📂 **Project:**  
-`08.Uncovering Hidden Country Segments for Global Development Strategy/`
+### 09. Ad Targeting Optimization
+**Domain:** Marketing Analytics / Segmentation / Machine Learning
 
----
+Explore data-driven audience targeting and optimization approaches using the available advertising dataset and notebook.
 
-### 09. Ad Targeting System
+**Focus areas:** Audience and behavior analysis, unsupervised segmentation, targeting optimization, and machine-learning/deep-learning experiments described in the approach material.
 
-**Domain:** Marketing AI / Customer Segmentation
+**Repository artifacts:** Advertising dataset, notebook, dataset overview, approach document, and final report PDF.
 
-Focus areas:
-
-- Customer segmentation
-- Advertisement targeting
-- User behavior analysis
-- Machine learning
-- Deep-learning-based targeting approaches
-
-**Technologies:**
-
-`Python` `Machine Learning` `Deep Learning` `Jupyter` `Google Colab`
-
-📂 **Project:**  
-`09.Ad Targeting System/`
-
----
+📂 [Project folder](09.Ad%20Targeting%20System/) · [Notebook](09.Ad%20Targeting%20System/Ad_Targeting_Optimization_FIXED_FINAL.ipynb)
 
 ### 12. Predicting Sales from Campaign Data
+**Domain:** Marketing Analytics / Sales Prediction
 
-**Domain:** Marketing Analytics / Sales Forecasting
+Model sales outcomes using campaign-related data to help interpret marketing performance and business drivers.
 
-Focus areas:
+**Focus areas:** Campaign data analysis, feature engineering, sales prediction, model evaluation, and business interpretation.
 
-- Campaign performance analysis
-- Sales prediction from marketing inputs
-- Feature engineering and regression modeling
-- ROI-oriented business insight generation
-- Budget and campaign optimization
+**Repository artifacts:** Approach document, Colab notebook(s), HTML export, final report PDF, and project notes.
 
-**Technologies:**
-
-`Python` `Pandas` `NumPy` `Scikit-learn` `XGBoost` `Matplotlib` `Seaborn`
-
-📂 **Project:**  
-`12.Predicting Sales from Campaign Data/`
-
----
-
-### 13. Vendor Verdict – Can We Trust This AI Tool
-
-**Domain:** AI Governance / Trustworthy AI / Vendor Risk Assessment
-
-Focus areas:
-
-- Vendor evidence assessment
-- Security and privacy evaluation
-- Official-domain evidence validation
-- Requirement-based decision making
-- Risk-aware AI adoption analysis
-- Conservative compliance verdicts
-
-**Technologies:**
-
-`Python` `Pandas` `NumPy` `Scikit-learn` `Jupyter` `Google Colab` `Kaggle`
-
-📂 **Project:**  
-`13.Vendor-Verdict-AI/`
-
----
-
----
+📂 [Project folder](12.Predicting%20Sales%20from%20Campaign%20Data/) · [Notebook](12.Predicting%20Sales%20from%20Campaign%20Data/Predicting_Sales_Influencer_Campaigns_Gangadhar_panda_latest.ipynb)
 
 ### 16. AI-Powered Customer Retention Analytics
+**Domain:** Customer Analytics / Churn Prediction / Retention Decision Support
 
-**Domain:** Customer Analytics / Predictive Modeling / Churn Prediction
+Estimate customer churn risk, analyze churn drivers, segment customers, and produce example retention-prioritization outputs using the IBM Telco Customer Churn sample.
 
-Focus areas:
+**Focus areas:** Data validation, EDA, feature engineering, preprocessing pipelines, Logistic Regression/Random Forest/Extra Trees comparison, validation-based threshold selection, test evaluation, permutation importance, risk segmentation, recommendation rules, and illustrative retention economics.
 
-- Customer churn prediction
-- Retention analysis
-- Customer lifetime value
-- Risk scoring and segmentation
-- Feature engineering and model explainability
-- Business impact estimation
+**Executed baseline results:** Held-out test ROC-AUC **0.8458**, PR-AUC **0.6522**, recall **0.9198**, precision **0.4405** at the recorded recall-oriented threshold. Results and limitations are documented in the project README.
 
-**Technologies:**
+**Repository artifacts:** Executed notebook, model pipeline, scored customers, metrics, feature importance, segment summaries, economics scenario, and output archive.
 
-`Python` `Pandas` `NumPy` `Scikit-learn` `XGBoost` `SHAP` `Matplotlib` `Seaborn`
-
-📂 **Project:**  
-[Open AI-Powered Customer Retention Analytics](15.AI-Powered%20Customer%20Retention%20Analytics/)
+📂 [Project folder](16.AI-Powered%20Customer%20Retention%20Analytics/) · [Detailed README and improvement roadmap](16.AI-Powered%20Customer%20Retention%20Analytics/README.md) · [Executed notebook](16.AI-Powered%20Customer%20Retention%20Analytics/AI_Powered_Customer_Retention_Analytics%20(1).ipynb)
 
 ---
 
-# 🔵 Computer Vision
+## 🔵 Computer Vision & Deep Learning
 
-## 07. Street View Blurring System — YOLOv8
-
+### 07. Street View License Plate Detection & Blurring — YOLOv8
 **Domain:** Computer Vision / Privacy Protection
 
-A computer vision pipeline for detecting license plates and protecting user privacy through automated image anonymization.
+Develop a computer-vision workflow to detect license plates and blur them in images for privacy-oriented processing.
 
-### Workflow
+**Focus areas:** Object detection, license-plate localization, bounding boxes, image processing, automated blurring, and privacy protection.
 
-```text
-Input Image
-     │
-     ▼
-Object Detection
-     │
-     ▼
-License Plate Detection
-     │
-     ▼
-Bounding Box Extraction
-     │
-     ▼
-Image Blurring
-     │
-     ▼
-Privacy-Protected Image
-```
+**Repository artifacts:** YOLOv8 notebook, approach document, dataset description, business-answer document, and final report PDF.
 
-### Key Capabilities
+**Technologies indicated by project assets:** Python, YOLOv8, OpenCV, deep learning.
 
-- Object detection
-- License plate detection
-- Bounding-box processing
-- Automated image blurring
-- Privacy-preserving image processing
+📂 [Project folder](07.Street%20View%20Blurring%20System(yolo%208)/) · [Notebook](07.Street%20View%20Blurring%20System(yolo%208)/finalyolov8licenceplatedetection.ipynb)
 
-**Technologies:**
+> Repository note: the README currently stored inside this folder appears to describe YouTube Shorts rather than license-plate blurring. It should be corrected in a separate project-documentation pass.
 
-`Python` `YOLOv8` `OpenCV` `Deep Learning`
-
-📂 **Project:**  
-`07.Street View Blurring System(yolo 8)/`
-
----
-
-## 14. Driver Drowsiness Detection System
-
+### 14. Driver Drowsiness Detection System
 **Domain:** Computer Vision / Safety AI / Deep Learning
 
-A deep learning project that classifies a driver's facial image as **Drowsy** or **Non-Drowsy** using transfer learning with **MobileNetV2**. The workflow includes dataset inspection, face detection, preprocessing, training, evaluation, and TFLite deployment.
+Classify driver facial images into drowsy and non-drowsy categories using a MobileNetV2-based transfer-learning workflow, as described by the project notebook and documentation.
 
-### Workflow
+**Focus areas:** Dataset inspection, face detection/cropping, image preprocessing and augmentation, transfer learning, model evaluation, and TensorFlow Lite conversion/inference.
 
-```text
-Image Dataset
-     │
-     ▼
-Dataset Inspection
-     │
-     ▼
-Face Detection / Face Cropping
-     │
-     ▼
-Preprocessing & Augmentation
-     │
-     ▼
-MobileNetV2 Transfer Learning
-     │
-     ▼
-Training / Validation / Evaluation
-     │
-     ▼
-TFLite Conversion & Inference
-```
+**Repository artifacts:** Notebook, problem statement, approach document, dataset description, and project README.
 
-### Key Capabilities
+**Technologies:** Python, TensorFlow/Keras, MobileNetV2, OpenCV, Dlib, scikit-learn.
 
-- Driver fatigue detection
-- Facial image classification
-- Face detection and cropping
-- Image augmentation and preprocessing
-- Transfer learning with MobileNetV2
-- Safety-focused evaluation and threshold tuning
-- TensorFlow Lite deployment for edge inference
-
-**Technologies:**
-
-`Python` `TensorFlow` `Keras` `MobileNetV2` `OpenCV` `Dlib` `NumPy` `Pandas` `Matplotlib` `Scikit-learn`
-
-📂 **Project:**  
-`14.Driver Drowsiness Detection System/`
+📂 [Project folder](14.Driver%20Drowsiness%20Detection%20System/) · [README](14.Driver%20Drowsiness%20Detection%20System/README_Driver_Drowsiness_Detection.md) · [Notebook](14.Driver%20Drowsiness%20Detection%20System/driver-drowsiness-mobilenetv2-complete-final.ipynb)
 
 ---
 
-# 🟣 Generative AI & LLM Projects
+## 🟣 Generative AI, RAG & LLM Engineering
 
-## 10. Domain-Specific RAG System
+### 10. Domain-Specific Retrieval-Augmented Generation (RAG)
+**Domain:** Generative AI / RAG / Semantic Retrieval
 
-**Domain:** Generative AI / Retrieval-Augmented Generation
+Build a domain-specific question-answering workflow that retrieves relevant material from a provided knowledge dataset and uses it as context for an LLM response.
 
-A domain-specific **Retrieval-Augmented Generation (RAG)** system designed to answer technical questions using relevant documentation and retrieved context.
+**Focus areas:** Data ingestion, text preparation, chunking, embeddings, vector retrieval, context construction, prompt design, and grounded answer generation.
 
-### RAG Architecture
+**Repository artifacts:** Multiple notebook versions (v0–v3), domain dataset, and a project notes file currently named `READMEmd`.
 
-```text
-                 ┌──────────────────┐
-                 │   User Question  │
-                 └────────┬─────────┘
-                          │
-                          ▼
-                 ┌──────────────────┐
-                 │ Query Processing │
-                 └────────┬─────────┘
-                          │
-                          ▼
-                 ┌──────────────────┐
-                 │ Embedding Model  │
-                 └────────┬─────────┘
-                          │
-                          ▼
-                 ┌──────────────────┐
-                 │  Vector Database │
-                 │     Milvus       │
-                 └────────┬─────────┘
-                          │
-                          ▼
-                 ┌──────────────────┐
-                 │ Relevant Chunks  │
-                 └────────┬─────────┘
-                          │
-                          ▼
-                 ┌──────────────────┐
-                 │       LLM        │
-                 └────────┬─────────┘
-                          │
-                          ▼
-                 ┌──────────────────┐
-                 │ Grounded Answer  │
-                 └──────────────────┘
-```
+📂 [Project folder](10.Build%20a%20Domain%20Specific%20RAG/) · [Notebook v3](10.Build%20a%20Domain%20Specific%20RAG/RAG_Assignment_Solution_v3.ipynb)
 
-### Key Components
-
-- Document ingestion
-- Text preprocessing
-- Text chunking
-- Embedding generation
-- Vector storage
-- Semantic search
-- Context retrieval
-- Prompt construction
-- LLM generation
-- Grounded responses
-- RAG evaluation
-
-**Technologies:**
-
-`Python` `Hugging Face` `Embeddings` `Milvus` `LLMs` `Opik`
-
-📂 **Project:**  
-`10.Build a Domain Specific RAG/`
-
----
-
-# 🟠 LLM Fine-Tuning
-
-## 11. Project TuneCraft — LoRA Fine-Tuning
-
+### 11. Project TuneCraft — LoRA Fine-Tuning
 **Domain:** Large Language Models / Parameter-Efficient Fine-Tuning
 
-A practical LLM fine-tuning project focused on adapting a pretrained language model using **LoRA (Low-Rank Adaptation)** and **PEFT (Parameter-Efficient Fine-Tuning)**.
+Fine-tune a pretrained TinyLlama chat model on instruction-following data using LoRA/PEFT adapters, rather than updating all model parameters.
 
-### Fine-Tuning Pipeline
+**Focus areas:** Base-model evaluation, instruction dataset preparation, tokenization, LoRA configuration, supervised fine-tuning, adapter persistence, and baseline-versus-adapted evaluation.
 
-```text
-Instruction Dataset
-        │
-        ▼
-Data Preparation
-        │
-        ▼
-Tokenizer
-        │
-        ▼
-Pretrained LLM
-        │
-        ▼
-LoRA / PEFT
-        │
-        ▼
-Fine-Tuning
-        │
-        ▼
-Evaluation
-        │
-        ▼
-Fine-Tuned Model
-```
+**Repository artifacts:** Final notebook, project README, and adapter archive.
 
-### Key Concepts
+**Technologies:** Python, PyTorch, Hugging Face Transformers, TRL, PEFT, LoRA, Google Colab GPU.
 
-- Instruction fine-tuning
-- Parameter-efficient fine-tuning
-- LoRA adapters
-- Transformer architectures
-- Dataset preparation
-- Tokenization
-- Model evaluation
+📂 [Project folder](11.Project%20TuneCraft(LORA%20FINE%20TUNING)/) · [README](11.Project%20TuneCraft(LORA%20FINE%20TUNING)/README.md) · [Notebook](11.Project%20TuneCraft(LORA%20FINE%20TUNING)/LoRA_Assignment_300926_FINAL.ipynb)
 
-**Technologies:**
+### 17. Trip AI Agent with MCP — Trip Buddy
+**Domain:** Agentic AI / Conversational AI / MCP / RAG
 
-`Python` `PyTorch` `Hugging Face Transformers` `TRL` `PEFT` `LoRA` `Google Colab GPU`
+A Python travel assistant organized around a conversational agent, travel tools, MCP client and servers, knowledge retrieval, and conversation memory.
 
-📂 **Project:**  
-`11.Project TuneCraft(LORA FINE TUNING)/`
+**Repository components:** Gradio application, travel agent, response formatter, conversation memory, travel tools, MCP client, Travel and Knowledge MCP servers, RAG retriever, database connection, and tests.
+
+**Technologies evidenced by repository:** Python, Gradio, MCP, RAG, SQLite, Docker.
+
+📂 [Project folder](17.Trip%20AI%20Agent%20with%20MCP/trip_buddy_agent/) · [Project README](17.Trip%20AI%20Agent%20with%20MCP/trip_buddy_agent/README.md)
 
 ---
+
+## 🛡️ Responsible AI & Governance
+
+### 13. Vendor Verdict — Can We Trust This AI Tool?
+**Domain:** AI Governance / Trustworthy AI / Vendor Risk Assessment
+
+Evaluate AI vendor security, privacy, and data-protection requirements using vendor-specific evidence and conservative requirement-level decisions.
+
+**Focus areas:** Evidence extraction, official-domain checks, trusted-source filtering, date-aware evidence, fact mapping, requirement assessment, UNKNOWN/NEEDS_REVIEW handling, overall vendor verdicts, holdout validation, and competition submission generation.
+
+**Recorded results documented in project README:** local holdout score and public leaderboard score are reported separately; they represent different evaluation settings.
+
+**Repository artifacts:** Notebook, source utilities, competition data files, working analysis CSVs, and README.
+
+**Technologies:** Python, Pandas, NumPy, scikit-learn, Jupyter, Kaggle.
+
+📂 [Project folder](13.Vendor-Verdict-AI/) · [README](13.Vendor-Verdict-AI/README.md) · [Notebook](13.Vendor-Verdict-AI/vendor-solution.ipynb)
+
+---
+
+## 📈 Financial Analytics & Agentic AI
+
 ### 15. Fundamental Stock Analysis AI Agent
+**Domain:** Financial Analytics / Fundamental Analysis / Multi-Agent AI
 
-**Domain:** Financial Analytics / Fundamental Analysis / Agentic AI / Investment Research
+A Streamlit and command-line application that coordinates specialist agents for financial data analysis, news sentiment, risk review, valuation, and report writing.
 
-An AI-assisted stock research application that coordinates specialist agents to analyze a company’s available financial data, recent news, business risks, and valuation scenarios. It brings the findings together into a structured research brief through a Streamlit interface or command-line report workflow.
+**Implemented components visible in the repository:** orchestrator, financial data agent, news sentiment agent, risk agent, valuation agent, report writer, financial/news/valuation tools, Streamlit UI, Docker configuration, and sample Markdown/JSON reports for AAPL, GOOGL, and RELIANCE.NS.
 
-**Implemented capabilities:**
+**Technologies:** Python, OpenAI API, multi-agent orchestration, Streamlit, yfinance, Pandas, NumPy, DCF scenario analysis, Docker.
 
-- Multi-agent orchestration for financial analysis, news and sentiment, risk assessment, valuation, and report synthesis
-- Company profile, selected financial statements, key ratios, cash-flow data, and recent headlines retrieval using Yahoo Finance via `yfinance`
-- Financial health analysis covering revenue, profitability, margins, cash flow, return on equity, leverage, and liquidity where data is available
-- News headline sentiment analysis with uncertainty handling
-- Evidence-based risk review covering leverage, liquidity, cash-flow quality, beta, and relevant headline risks
-- Illustrative discounted cash flow (DCF) scenario calculation using explicit growth, discount-rate, and terminal-growth assumptions
-- Sector-based peer-multiple retrieval for comparative context
-- Parallel execution of independent financial, news, and risk analysis agents
-- Consolidated research report with rating category, supporting evidence, risks, and bull/base/bear considerations
-- Streamlit dashboard to submit a ticker and review the final, financial, news, risk, and valuation outputs
-- CLI report generation with Markdown and JSON outputs
-- Short-lived in-memory data caching, Docker packaging, and project-specific dependencies
-- Sample Markdown and JSON reports for AAPL, GOOGL, and RELIANCE.NS
+📂 [Project folder](15.Fundamental%20Stock%20Analysis%20AI%20Project/) · [README](15.Fundamental%20Stock%20Analysis%20AI%20Project/README.md)
 
-**Agent architecture:**
+> **Responsible-use note:** Financial reports are educational decision-support outputs, not personalized investment advice. Valuation scenarios depend on assumptions, and market data may be delayed or incomplete.
 
-`Orchestrator` → `Financial Data Agent` + `News & Sentiment Agent` + `Risk Agent` → `Valuation Agent` → `Report Writer Agent`
+---
 
-**Technologies:**
+## Portfolio inventory at a glance
 
-`Python 3.12` `OpenAI API` `Agentic AI` `Multi-Agent Orchestration` `Streamlit` `yfinance` `Pandas` `NumPy` `DCF Valuation` `Docker`
+| Project | Area | Main repository artifact |
+|---|---|---|
+| 01 E-commerce Marketing & Sales | Analytics | README, approach, final report |
+| 02 CO₂ Emissions | Regression / analytics | Dataset, documentation, report |
+| 03 Ad Click / CTR | Classification | Notebook, report, dataset archive |
+| 04 Uber Ride Completion | Predictive analytics | Notebook, dataset, report |
+| 05 YouTube Shorts | Content analytics | Notebook, dataset, report |
+| 06 Amazon Recommendation | Recommendation systems | Notebook, validation report |
+| 07 License Plate Blurring | Computer vision | YOLOv8 notebook, report |
+| 08 Country Segmentation | Clustering | Notebook, country dataset, report |
+| 09 Ad Targeting | Marketing AI | Notebook, dataset, report |
+| 10 Domain-Specific RAG | Generative AI | Notebook versions, knowledge dataset |
+| 11 TuneCraft LoRA | LLM fine-tuning | Notebook, adapter archive |
+| 12 Campaign Sales Prediction | Predictive analytics | Notebooks, report |
+| 13 Vendor Verdict | Responsible AI | Notebook, assessment utilities |
+| 14 Driver Drowsiness | Computer vision | MobileNetV2 notebook |
+| 15 Fundamental Stock Analysis | Agentic AI / finance | Python app, Streamlit, reports |
+| 16 Customer Retention | Customer analytics | Executed notebook, model and outputs |
+| 17 Trip Buddy | Agentic AI / MCP | Python application, tests, Docker |
 
-**Reports and project assets:**
-
-- [Project README and setup instructions](15.Fundamental%20Stock%20Analysis%20AI%20Project/README.md)
-- [Sample AAPL report](15.Fundamental%20Stock%20Analysis%20AI%20Project/reports/AAPL_fundamental_report.md)
-- [Sample GOOGL report](15.Fundamental%20Stock%20Analysis%20AI%20Project/reports/GOOGL_fundamental_report.md)
-- [Sample RELIANCE.NS report](15.Fundamental%20Stock%20Analysis%20AI%20Project/reports/RELIANCE.NS_fundamental_report.md)
-
-📂 **Project:**  
-[Open Fundamental Stock Analysis AI Agent](15.Fundamental%20Stock%20Analysis%20AI%20Project/)
-
-> **Responsible-use note:** This is an educational research and decision-support application, not personalized investment advice. Financial data may be delayed or incomplete, and DCF values are assumption-driven scenarios rather than forecasts or price targets. Missing evidence should be reported as unconfirmed rather than invented.
 ---
 
 # 🧠 Skills & Technologies
@@ -652,9 +405,10 @@ An AI-assisted stock research application that coordinates specialist agents to 
 
 # 🏗️ Repository Structure
 
+The numbered project folders currently present on the repository's `main` branch:
+
 ```text
 AIPROJECT/
-│
 ├── 01.E-commerce Marketing and sales/
 ├── 02.CO2 emission/
 ├── 03.Ad click prediction/
@@ -670,15 +424,12 @@ AIPROJECT/
 ├── 13.Vendor-Verdict-AI/
 ├── 14.Driver Drowsiness Detection System/
 ├── 15.Fundamental Stock Analysis AI Project/
-├── 15.AI-Powered Customer Retention Analytics/
+├── 16.AI-Powered Customer Retention Analytics/
 ├── 17.Trip AI Agent with MCP/
 │   └── trip_buddy_agent/
-├── demo_Live_Class_Notebook.ipynb
-├── README.md
-└── .gitignore
+├── assets/
+└── README.md
 ```
-
----
 
 # 🔄 AI/ML Development Workflow
 
@@ -987,7 +738,7 @@ This roadmap reflects the repository structure currently checked into `main`. A 
 
 # 📌 Portfolio Focus
 
-The portfolio is organized around four major AI engineering areas:
+The portfolio spans the following AI engineering areas:
 
 | Area | Focus |
 |---|---|
