@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="780" viewBox="0 0 1500 780" role="img" aria-labelledby="title desc">
+<title id="title">Fundamental Stock Analysis multi-agent workflow</title><desc id="desc">Ticker input flows to Yahoo Finance data snapshot, then parallel financial, news and risk agents, followed by valuation, report synthesis and Streamlit or report outputs.</desc>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#081322"/><stop offset="1" stop-color="#17314a"/></linearGradient><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0L8 3L0 6" fill="#9bbad9"/></marker></defs>
+<rect width="1500" height="780" rx="24" fill="url(#bg)"/>
+<text x="70" y="72" fill="#f2f7ff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="36" font-weight="750">MULTI-AGENT FUNDAMENTAL ANALYSIS</text>
+<text x="72" y="112" fill="#b8c9e1" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="21">Specialist agents analyze a shared evidence snapshot before the report is synthesized.</text>
+<g font-family="Inter,Segoe UI,Arial,sans-serif" text-anchor="middle">
+<rect x="555" y="155" width="390" height="72" rx="18" fill="#ffffff" fill-opacity=".08" stroke="#78a8ee" stroke-width="2"/><text x="750" y="199" fill="#f5f8ff" font-size="24" font-weight="700">Stock Ticker Input</text>
+<rect x="515" y="285" width="470" height="86" rx="18" fill="#ffffff" fill-opacity=".08" stroke="#56d2bd" stroke-width="2"/><text x="750" y="321" fill="#eafff8" font-size="23" font-weight="700">Yahoo Finance Snapshot</text><text x="750" y="349" fill="#b9d7dc" font-size="17">Profile • Statements • Ratios • Headlines</text>
+<path d="M750 227V285" stroke="#9bbad9" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M750 371V425M250 425H1250M250 425V465M750 425V465M1250 425V465" fill="none" stroke="#9bbad9" stroke-width="3"/>
+<g><rect x="75" y="465" width="350" height="110" rx="18" fill="#ffffff" fill-opacity=".07" stroke="#64b5e8" stroke-width="2"/><text x="250" y="509" fill="#f3f8ff" font-size="22" font-weight="700">Financial Agent</text><text x="250" y="542" fill="#c1d4e8" font-size="17">Profitability • Cash flow • Ratios</text></g>
+<g><rect x="575" y="465" width="350" height="110" rx="18" fill="#ffffff" fill-opacity=".07" stroke="#d6a253" stroke-width="2"/><text x="750" y="509" fill="#f3f8ff" font-size="22" font-weight="700">News &amp; Sentiment Agent</text><text x="750" y="542" fill="#c1d4e8" font-size="17">Headlines • Sentiment • Uncertainty</text></g>
+<g><rect x="1075" y="465" width="350" height="110" rx="18" fill="#ffffff" fill-opacity=".07" stroke="#d77da1" stroke-width="2"/><text x="1250" y="509" fill="#f3f8ff" font-size="22" font-weight="700">Risk Agent</text><text x="1250" y="542" fill="#c1d4e8" font-size="17">Leverage • Liquidity • Risk evidence</text></g>
+<path d="M250 575V620H750M750 575V620M1250 575V620H750V647" fill="none" stroke="#9bbad9" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="545" y="647" width="410" height="76" rx="18" fill="#ffffff" fill-opacity=".08" stroke="#57d6b6" stroke-width="2"/><text x="750" y="693" fill="#edfff8" font-size="23" font-weight="700">Valuation + Report Synthesis</text>
+<path d="M955 685H1080" stroke="#9bbad9" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="1090" y="640" width="340" height="92" rx="18" fill="#ffffff" fill-opacity=".07" stroke="#8da4eb" stroke-width="2"/><text x="1260" y="676" fill="#f3f6ff" font-size="20" font-weight="700">Streamlit UI</text><text x="1260" y="706" fill="#c6d5eb" font-size="17">CLI: Markdown + JSON</text>
+</g></svg>
