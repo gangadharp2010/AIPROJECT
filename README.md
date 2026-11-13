@@ -134,7 +134,7 @@ Use country-level indicators to explore groups with similar socioeconomic and de
 
 **Repository artifacts:** Country dataset, dataset description, approach document, notebook, and submitted report PDF.
 
-📂 [Project folder](08.Uncovering%20Hidden%20Country%20Segments%20for%20Global%20Development%20Strategy/)
+📂 [Project folder](08.Uncovering%20Hidden%20Country%20Segments%20for%20Global%20Development%20Strategy/) · [README](08.Uncovering%20Hidden%20Country%20Segments%20for%20Global%20Development%20Strategy/README.md)
 
 ### 09. Ad Targeting Optimization
 **Domain:** Marketing Analytics / Segmentation / Machine Learning
@@ -145,7 +145,7 @@ Explore data-driven audience targeting and optimization approaches using the ava
 
 **Repository artifacts:** Advertising dataset, notebook, dataset overview, approach document, and final report PDF.
 
-📂 [Project folder](09.Ad%20Targeting%20System/) · [Notebook](09.Ad%20Targeting%20System/Ad_Targeting_Optimization_FIXED_FINAL.ipynb)
+📂 [Project folder](09.Ad%20Targeting%20System/) · [README](09.Ad%20Targeting%20System/README.md) · [Notebook](09.Ad%20Targeting%20System/Ad_Targeting_Optimization_FIXED_FINAL.ipynb)
 
 ### 12. Predicting Sales from Campaign Data
 **Domain:** Marketing Analytics / Sales Prediction
@@ -156,7 +156,7 @@ Model sales outcomes using campaign-related data to help interpret marketing per
 
 **Repository artifacts:** Approach document, Colab notebook(s), HTML export, final report PDF, and project notes.
 
-📂 [Project folder](12.Predicting%20Sales%20from%20Campaign%20Data/) · [Notebook](12.Predicting%20Sales%20from%20Campaign%20Data/Predicting_Sales_Influencer_Campaigns_Gangadhar_panda_latest.ipynb)
+📂 [Project folder](12.Predicting%20Sales%20from%20Campaign%20Data/) · [README](12.Predicting%20Sales%20from%20Campaign%20Data/README.md) · [Notebook](12.Predicting%20Sales%20from%20Campaign%20Data/Predicting_Sales_Influencer_Campaigns_Gangadhar_panda_latest.ipynb)
 
 ### 16. AI-Powered Customer Retention Analytics
 **Domain:** Customer Analytics / Churn Prediction / Retention Decision Support
@@ -186,9 +186,7 @@ Develop a computer-vision workflow to detect license plates and blur them in ima
 
 **Technologies indicated by project assets:** Python, YOLOv8, OpenCV, deep learning.
 
-📂 [Project folder](07.Street%20View%20Blurring%20System(yolo%208)/) · [Notebook](07.Street%20View%20Blurring%20System(yolo%208)/finalyolov8licenceplatedetection.ipynb)
-
-> Repository note: the README currently stored inside this folder appears to describe YouTube Shorts rather than license-plate blurring. It should be corrected in a separate project-documentation pass.
+📂 [Project folder](07.Street%20View%20Blurring%20System(yolo%208)/) · [README](07.Street%20View%20Blurring%20System(yolo%208)/README.md) · [Notebook](07.Street%20View%20Blurring%20System(yolo%208)/finalyolov8licenceplatedetection.ipynb)
 
 ### 14. Driver Drowsiness Detection System
 **Domain:** Computer Vision / Safety AI / Deep Learning
@@ -216,7 +214,7 @@ Build a domain-specific question-answering workflow that retrieves relevant mate
 
 **Repository artifacts:** Multiple notebook versions (v0–v3), domain dataset, and a project notes file currently named `READMEmd`.
 
-📂 [Project folder](10.Build%20a%20Domain%20Specific%20RAG/) · [Notebook v3](10.Build%20a%20Domain%20Specific%20RAG/RAG_Assignment_Solution_v3.ipynb)
+📂 [Project folder](10.Build%20a%20Domain%20Specific%20RAG/) · [README](10.Build%20a%20Domain%20Specific%20RAG/README.md) · [Notebook v3](10.Build%20a%20Domain%20Specific%20RAG/RAG_Assignment_Solution_v3.ipynb)
 
 ### 11. Project TuneCraft — LoRA Fine-Tuning
 **Domain:** Large Language Models / Parameter-Efficient Fine-Tuning
