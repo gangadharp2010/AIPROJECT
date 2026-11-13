@@ -1,6 +1,6 @@
 # 🤖 AI / ML Project Portfolio
 
-> A practical collection of **Machine Learning, Deep Learning, Generative AI, RAG, Computer Vision, Recommendation Systems, and Data Analytics projects** focused on solving real-world business and engineering challenges.
+> A practical collection of **Machine Learning, Deep Learning, Generative AI, RAG, Computer Vision, Recommendation Systems, and Data Analytics projects** focused on solving real-world business and engineering problems.
 
 [![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)](https://www.python.org/)
 [![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter)](https://jupyter.org/)
@@ -13,7 +13,7 @@
 
 ## 📌 About This Repository
 
-This repository represents my **AI/ML learning and project portfolio**, covering the journey from traditional data analytics and machine learning to modern **Generative AI, Retrieval-Augmented Generation, Computer Vision, Recommendation Systems, and LLM-based solutions**.
+This repository represents my **AI/ML learning and project portfolio**, covering the journey from traditional data analytics and machine learning to modern **Generative AI, Retrieval-Augmented Generation, Computer Vision, Recommendation Systems, and trustworthy AI / governance workflows**.
 
 The projects focus on practical business and technical problems including:
 
@@ -28,6 +28,7 @@ The projects focus on practical business and technical problems including:
 - 🎯 Ad targeting
 - 💰 Sales forecasting from campaign data
 - 🔎 Domain-specific RAG
+- 🛡️ AI governance and vendor risk assessment
 - 🧠 LLM fine-tuning using LoRA / PEFT
 
 The overall objective is to develop **end-to-end AI solutions**, from understanding the problem and data to model development, evaluation, explainability, and deployment-oriented thinking.
@@ -228,6 +229,28 @@ Focus areas:
 
 📂 **Project:**  
 `12.Predicting Sales from Campaign Data/`
+
+---
+
+### 13. Vendor Verdict – Can We Trust This AI Tool
+
+**Domain:** AI Governance / Trustworthy AI / Vendor Risk Assessment
+
+Focus areas:
+
+- Vendor evidence assessment
+- Security and privacy evaluation
+- Official-domain evidence validation
+- Requirement-based decision making
+- Risk-aware AI adoption analysis
+- Conservative compliance verdicts
+
+**Technologies:**
+
+`Python` `Pandas` `NumPy` `Scikit-learn` `Jupyter` `Google Colab` `Kaggle`
+
+📂 **Project:**  
+`13.Vendor-Verdict-AI/`
 
 ---
 
@@ -469,10 +492,20 @@ Fine-Tuned Model
 - Instruction Fine-Tuning
 - Parameter-Efficient Fine-Tuning
 
+## 🛡️ AI Governance & Trustworthy AI
+
+- Vendor Risk Assessment
+- Evidence Evaluation
+- Security & Privacy Compliance
+- Trustworthy AI
+- AI Governance
+- Decision Confidence
+
 ## 🛠️ Development Tools
 
 - Jupyter Notebook
 - Google Colab
+- Kaggle
 - Git
 - GitHub
 
@@ -495,6 +528,8 @@ AIPROJECT/
 ├── 10.Build a Domain Specific RAG/
 ├── 11.Project TuneCraft(LORA FINE TUNING)/
 ├── 12.Predicting Sales from Campaign Data/
+├── 13.Vendor-Verdict-AI/
+├── demo_Live_Class_Notebook.ipynb
 ├── README.md
 └── .gitignore
 ```
@@ -584,6 +619,7 @@ Grounded Response
 | ✨ Generative AI | LLM applications |
 | 🔎 RAG | Domain-specific knowledge retrieval |
 | 🧬 LLM Fine-Tuning | LoRA / PEFT |
+| 🛡️ AI Governance | Vendor trust, evidence-based compliance, security and privacy assessment |
 | 🔬 Explainable AI | SHAP and model interpretation |
 
 ---
@@ -744,6 +780,9 @@ This portfolio provides hands-on experience in:
 - LLM Evaluation
 - LLM Fine-Tuning
 - LoRA / PEFT
+- AI Governance
+- Trustworthy AI
+- Security & Privacy Compliance
 
 ---
 
@@ -764,6 +803,7 @@ The repository will continue to evolve toward production-oriented AI engineering
 - [ ] Add Streamlit applications
 - [ ] Add RAG evaluation dashboards
 - [ ] Add LLM observability
+- [ ] Add AI governance dashboards
 - [ ] Add production-ready AI pipelines
 
 ---
@@ -778,6 +818,7 @@ The portfolio is organized around four major AI engineering areas:
 | 🤖 **Machine Learning** | Predictive modeling and recommendation systems |
 | 👁️ **Deep Learning** | Computer vision and neural networks |
 | 🧠 **Generative AI** | RAG, LLMs, embeddings and fine-tuning |
+| 🛡️ **AI Governance** | Trust and risk assessment for AI adoption |
 
 ---
 
@@ -829,9 +870,9 @@ Evaluation
 
 This repository represents an ongoing journey into:
 
-**Artificial Intelligence → Machine Learning → Deep Learning → Generative AI → AI Engineering**
+**Artificial Intelligence → Machine Learning → Deep Learning → Generative AI → AI Engineering → Trustworthy AI**
 
-The focus is on applying AI technologies to practical business and engineering problems while continuously improving knowledge in modern machine learning and LLM systems.
+The focus is on applying AI technologies to practical business and engineering problems while continuously improving knowledge in modern machine learning, LLM systems, and responsible AI governance.
 
 ---
 
