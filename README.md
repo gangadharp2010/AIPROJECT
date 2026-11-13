@@ -13,7 +13,7 @@
 
 ## 📌 About This Repository
 
-This repository represents my **AI/ML learning and project portfolio**, covering the journey from traditional data analytics and machine learning to modern **Generative AI, Retrieval-Augmented Generation, Computer Vision, Recommendation Systems, and Responsible AI**.
+This repository represents my **AI/ML learning and project portfolio**, covering the journey from traditional data analytics and machine learning to modern **Generative AI, Retrieval-Augmented Generation, LLM fine-tuning, Computer Vision, Recommendation Systems, and Responsible AI**.
 
 The projects focus on practical business and technical problems including:
 
@@ -32,6 +32,7 @@ The projects focus on practical business and technical problems including:
 - 🧠 LLM fine-tuning using LoRA / PEFT
 - 🚗 Driver drowsiness and road safety monitoring
 - 💼 Customer retention and churn analytics
+- 📈 Fundamental stock analysis and financial analytics
 
 The overall objective is to develop **end-to-end AI solutions**, from understanding the problem and data to model development, evaluation, explainability, and deployment-oriented thinking.
 
@@ -256,7 +257,29 @@ Focus areas:
 
 ---
 
-### 15. AI-Powered Customer Retention Analytics
+### 15. Fundamental Stock Analysis AI Project
+
+**Domain:** Financial Analytics / Fundamental Analysis / AI-Assisted Decision Support
+
+Focus areas:
+
+- Fundamental analysis of company and stock data
+- Financial statement and business performance analysis
+- Revenue, profitability, and valuation metrics
+- Financial data cleaning and feature engineering
+- Company comparison and screening
+- Data-driven insights to support investment research
+
+**Technologies:**
+
+`Python` `Pandas` `NumPy` `Scikit-learn` `Matplotlib` `Seaborn` `Jupyter`
+
+📂 **Project:**  
+`15.Fundamental Stock Analysis AI Project/`
+
+---
+
+### 16. AI-Powered Customer Retention Analytics
 
 **Domain:** Customer Analytics / Predictive Modeling / Churn Prediction
 
@@ -328,7 +351,7 @@ Privacy-Protected Image
 
 **Domain:** Computer Vision / Safety AI / Deep Learning
 
-A deep learning project that classifies a driver's facial image as **Drowsy** or **Non-Drowsy** using transfer learning with **MobileNetV2**. The workflow includes dataset inspection, face detection, preprocessing, model training, evaluation, and TFLite conversion for deployment.
+A deep learning project that classifies a driver's facial image as **Drowsy** or **Non-Drowsy** using transfer learning with **MobileNetV2**. The workflow includes dataset inspection, face detection, preprocessing, training, evaluation, and TFLite deployment.
 
 ### Workflow
 
@@ -609,6 +632,7 @@ AIPROJECT/
 ├── 12.Predicting Sales from Campaign Data/
 ├── 13.Vendor-Verdict-AI/
 ├── 14.Driver Drowsiness Detection System/
+├── 15.Fundamental Stock Analysis AI Project/
 ├── 15.AI-Powered Customer Retention Analytics/
 ├── demo_Live_Class_Notebook.ipynb
 ├── README.md
@@ -703,6 +727,7 @@ Grounded Response
 | 🛡️ AI Governance | Vendor trust, evidence-based compliance, security and privacy assessment |
 | 🔬 Explainable AI | SHAP and model interpretation |
 | 💼 Customer Analytics | Churn prediction, retention, risk scoring and business impact analysis |
+| 📈 Financial Analytics | Fundamental stock analysis and company screening |
 
 ---
 
@@ -869,6 +894,8 @@ This portfolio provides hands-on experience in:
 - Customer Retention Analysis
 - Churn Prediction
 - Retention Strategy Modeling
+- Fundamental Stock Analysis
+- Financial Data Analytics
 
 ---
 
@@ -892,6 +919,7 @@ The repository will continue to evolve toward production-oriented AI engineering
 - [ ] Add AI governance dashboards
 - [ ] Add production-ready AI pipelines
 - [ ] Add customer retention dashboards
+- [ ] Add stock analysis dashboards and valuation reports
 
 ---
 
@@ -907,6 +935,7 @@ The portfolio is organized around four major AI engineering areas:
 | 🧠 **Generative AI** | RAG, LLMs, embeddings and fine-tuning |
 | 🛡️ **AI Governance** | Trust and risk assessment for AI adoption |
 | 💼 **Customer Intelligence** | Retention, churn prevention, and business actionability |
+| 📈 **Financial Intelligence** | Fundamental stock analysis and company screening |
 
 ---
 
@@ -989,4 +1018,3 @@ https://github.com/gangadharp2010/AIPROJECT
 ## 📬 Contact
 
 For collaboration, technical discussions, feedback, or project discussions, connect through GitHub.
-
