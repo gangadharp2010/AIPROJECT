@@ -268,35 +268,6 @@ Focus areas:
 
 ---
 
-### 17. Trip Buddy AI — Intelligent Travel Planning Agent with MCP
-
-**Domain:** Agentic AI / Generative AI / Travel Technology
-
-A conversational travel assistant that combines Model Context Protocol (MCP), retrieval-augmented generation (RAG), and persistent conversation memory to help users explore destinations, estimate trip costs, compare options against a budget, and retrieve travel knowledge.
-
-**Implemented capabilities:**
-
-- Gradio-based conversational interface
-- Custom Python travel agent and response formatting
-- MCP client with separate Travel and Knowledge MCP servers
-- Travel tools for destination discovery, trip-cost estimation, and budget-based destination search
-- RAG-based travel knowledge retrieval
-- SQLite-backed conversation history and extracted travel preferences
-- Project-specific dependency management and Docker configuration
-- Test module(s) for conversation memory and MCP-related functionality
-
-**Technologies:**
-
-`Python 3.12` `Gradio` `OpenAI API` `MCP SDK 1.x` `RAG` `SQLite` `Docker`
-
-📂 **Project:**  
-[Open Trip Buddy AI — Travel Agent with MCP](17.Trip%20AI%20Agent%20with%20MCP/trip_buddy_agent/)
-
-📄 **Project documentation:**  
-[Trip Buddy AI README](17.Trip%20AI%20Agent%20with%20MCP/trip_buddy_agent/README.md)
-
----
-
 ### 16. AI-Powered Customer Retention Analytics
 
 **Domain:** Customer Analytics / Predictive Modeling / Churn Prediction
@@ -558,6 +529,35 @@ Focus areas:
 [Open Fundamental Stock Analysis AI Project](15.Fundamental%20Stock%20Analysis%20AI%20Project/README.md)
 ---
 
+### 17. Trip Buddy AI — Intelligent Travel Planning Agent with MCP
+
+**Domain:** Agentic AI / Generative AI / Travel Technology
+
+A conversational travel assistant that combines Model Context Protocol (MCP), retrieval-augmented generation (RAG), and persistent conversation memory to help users explore destinations, estimate trip costs, compare options against a budget, and retrieve travel knowledge.
+
+**Implemented capabilities:**
+
+- Gradio-based conversational interface
+- Custom Python travel agent and response formatting
+- MCP client with separate Travel and Knowledge MCP servers
+- Travel tools for destination discovery, trip-cost estimation, and budget-based destination search
+- RAG-based travel knowledge retrieval
+- SQLite-backed conversation history and extracted travel preferences
+- Project-specific dependency management and Docker configuration
+- Test module(s) for conversation memory and MCP-related functionality
+
+**Technologies:**
+
+`Python 3.12` `Gradio` `OpenAI API` `MCP SDK 1.x` `RAG` `SQLite` `Docker`
+
+📂 **Project:**  
+[Open Trip Buddy AI — Travel Agent with MCP](17.Trip%20AI%20Agent%20with%20MCP/trip_buddy_agent/)
+
+📄 **Project documentation:**  
+[Trip Buddy AI README](17.Trip%20AI%20Agent%20with%20MCP/trip_buddy_agent/README.md)
+
+---
+
 # 🧠 Skills & Technologies
 
 ## 💻 Programming
@@ -616,6 +616,12 @@ Focus areas:
 ## ✨ Generative AI
 
 - Large Language Models
+- Agentic AI
+- Model Context Protocol (MCP)
+- MCP Clients and Servers
+- Tool Calling / Tool Orchestration
+- Conversational AI
+- Gradio
 - Hugging Face
 - Transformers
 - Prompt Engineering
@@ -672,6 +678,8 @@ AIPROJECT/
 ├── 14.Driver Drowsiness Detection System/
 ├── 15.Fundamental Stock Analysis AI Project/
 ├── 15.AI-Powered Customer Retention Analytics/
+├── 17.Trip AI Agent with MCP/
+│   └── trip_buddy_agent/
 ├── demo_Live_Class_Notebook.ipynb
 ├── README.md
 └── .gitignore
@@ -759,8 +767,9 @@ Grounded Response
 | 📈 Predictive Analytics | CTR, ride-hailing, content performance, campaign sales forecasting |
 | 👁️ Computer Vision | YOLOv8, image anonymization, driver safety monitoring |
 | 🧠 Deep Learning | Neural networks, vision, MobileNetV2-based classification |
-| ✨ Generative AI | LLM applications |
-| 🔎 RAG | Domain-specific knowledge retrieval |
+| ✨ Generative AI | LLM applications, conversational travel assistant |
+| 🧭 Agentic AI & MCP | Tool-using travel agent, MCP client and specialized servers |
+| 🔎 RAG | Domain-specific and travel-knowledge retrieval |
 | 🧬 LLM Fine-Tuning | LoRA / PEFT |
 | 🛡️ AI Governance | Vendor trust, evidence-based compliance, security and privacy assessment |
 | 🔬 Explainable AI | SHAP and model interpretation |
@@ -951,9 +960,11 @@ This roadmap reflects the repository structure currently checked into `main`. A 
 - [x] Customer retention / churn analysis project
 - [x] Fundamental stock analysis workflow with financial, news, risk, and valuation components
 - [x] RAG and LoRA fine-tuning learning projects
-- [x] MCP-based agent architecture with separate travel and knowledge servers in Trip Buddy AI
-- [x] RAG travel knowledge retrieval and SQLite-backed conversation memory in Trip Buddy AI
-- [x] Test code for selected Trip Buddy AI components
+- [x] Trip Buddy AI travel assistant with Gradio UI and a custom Python agent
+- [x] MCP client and separate Travel and Knowledge MCP servers in Trip Buddy AI
+- [x] Travel tools for destination discovery, budget-based search, and trip-cost estimation
+- [x] RAG travel-knowledge retrieval and SQLite-backed conversation memory
+- [x] Project-specific requirements, Dockerfile, and test modules for selected components
 - [x] Trustworthy-AI / vendor assessment work through Vendor Verdict AI
 
 ## 🚧 Improve consistency and completeness
