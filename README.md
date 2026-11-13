@@ -88,7 +88,7 @@ Build a predictive workflow to estimate whether an ad impression is likely to re
 
 **Technologies:** Python, Pandas, scikit-learn, Jupyter, Google Colab.
 
-📂 [Project folder](03.Ad%20click%20prediction/) · [README](03.Ad%20click%20prediction/Ad_Click_Prediction_README.md) · [Notebook](03.Ad%20click%20prediction/Click_Through_Rate_(CTR)_Prediction_Project.ipynb)
+📂 [Project folder](03.Ad%20click%20prediction/) · [README](03.Ad%20click%20prediction/README.md) · [Notebook](03.Ad%20click%20prediction/Click_Through_Rate_(CTR)_Prediction_Project.ipynb)
 
 ### 04. AI Solutions for Uber — NCR Ride Completion Prediction
 **Domain:** Ride-Hailing / Predictive Analytics
@@ -123,7 +123,7 @@ Explore recommendation approaches for matching customers with relevant products.
 
 **Repository artifacts:** Notebook, project-specific README, approach document, final report PDF, validation report, and archive.
 
-📂 [Project folder](06.Amazon%20Product%20Recommendation%20System/) · [README](06.Amazon%20Product%20Recommendation%20System/Amazon_Product_Recommendation_README.md) · [Notebook](06.Amazon%20Product%20Recommendation%20System/Amazon_Product_Recommendation_System%20(11).ipynb)
+📂 [Project folder](06.Amazon%20Product%20Recommendation%20System/) · [README](06.Amazon%20Product%20Recommendation%20System/README.md) · [Notebook](06.Amazon%20Product%20Recommendation%20System/Amazon_Product_Recommendation_System%20(11).ipynb)
 
 ### 08. Country Segmentation for Global Development Strategy
 **Domain:** Unsupervised Learning / Clustering
@@ -199,7 +199,7 @@ Classify driver facial images into drowsy and non-drowsy categories using a Mobi
 
 **Technologies:** Python, TensorFlow/Keras, MobileNetV2, OpenCV, Dlib, scikit-learn.
 
-📂 [Project folder](14.Driver%20Drowsiness%20Detection%20System/) · [README](14.Driver%20Drowsiness%20Detection%20System/README_Driver_Drowsiness_Detection.md) · [Notebook](14.Driver%20Drowsiness%20Detection%20System/driver-drowsiness-mobilenetv2-complete-final.ipynb)
+📂 [Project folder](14.Driver%20Drowsiness%20Detection%20System/) · [README](14.Driver%20Drowsiness%20Detection%20System/README.md) · [Notebook](14.Driver%20Drowsiness%20Detection%20System/driver-drowsiness-mobilenetv2-complete-final.ipynb)
 
 ---
 
@@ -238,7 +238,7 @@ A Python travel assistant organized around a conversational agent, travel tools,
 
 **Technologies evidenced by repository:** Python, Gradio, MCP, RAG, SQLite, Docker.
 
-📂 [Project folder](17.Trip%20AI%20Agent%20with%20MCP/trip_buddy_agent/) · [Project README](17.Trip%20AI%20Agent%20with%20MCP/trip_buddy_agent/README.md)
+📂 [Project folder](17.Trip%20AI%20Agent%20with%20MCP/trip_buddy_agent/) · [Project README](17.Trip%20AI%20Agent%20with%20MCP/README.md) · [Application setup guide](17.Trip%20AI%20Agent%20with%20MCP/trip_buddy_agent/README.md)
 
 ---
 
