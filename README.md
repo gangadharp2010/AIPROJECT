@@ -257,26 +257,6 @@ Focus areas:
 
 ---
 
-### 15. Fundamental Stock Analysis AI Project
-
-**Domain:** Financial Analytics / Fundamental Analysis / AI-Assisted Decision Support
-
-Focus areas:
-
-- Fundamental analysis of company and stock data
-- Financial statement and business performance analysis
-- Revenue, profitability, and valuation metrics
-- Financial data cleaning and feature engineering
-- Company comparison and screening
-- Data-driven insights to support investment research
-
-**Technologies:**
-
-`Python` `Pandas` `NumPy` `Scikit-learn` `Matplotlib` `Seaborn` `Jupyter`
-
-📂 **Project:**  
-`15.Fundamental Stock Analysis AI Project/`
-
 ---
 
 ### 16. AI-Powered Customer Retention Analytics
@@ -518,6 +498,26 @@ Fine-Tuned Model
 📂 **Project:**  
 `11.Project TuneCraft(LORA FINE TUNING)/`
 
+---
+### 15. Fundamental Stock Analysis AI Project
+
+**Domain:** Financial Analytics / Fundamental Analysis / AI-Assisted Decision Support
+
+Focus areas:
+
+- Fundamental analysis of company and stock data
+- Financial statement and business performance analysis
+- Revenue, profitability, and valuation metrics
+- Financial data cleaning and feature engineering
+- Company comparison and screening
+- Data-driven insights to support investment research
+
+**Technologies:**
+
+`Python` `Pandas` `NumPy` `Scikit-learn` `Matplotlib` `Seaborn` `Jupyter`
+
+📂 **Project:**  
+`15.Fundamental Stock Analysis AI Project/`
 ---
 
 # 🧠 Skills & Technologies
