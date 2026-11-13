@@ -13,7 +13,7 @@
 
 ## 📌 About This Repository
 
-This repository represents my **AI/ML learning and project portfolio**, covering the journey from traditional data analytics and machine learning to modern **Generative AI, Retrieval-Augmented Generation, Computer Vision, and Edge-AI applications**.
+This repository represents my **AI/ML learning and project portfolio**, covering the journey from traditional data analytics and machine learning to modern **Generative AI, Retrieval-Augmented Generation, Computer Vision, Recommendation Systems, and Responsible AI**.
 
 The projects focus on practical business and technical problems including:
 
@@ -31,6 +31,7 @@ The projects focus on practical business and technical problems including:
 - 🛡️ AI governance and vendor risk assessment
 - 🧠 LLM fine-tuning using LoRA / PEFT
 - 🚗 Driver drowsiness and road safety monitoring
+- 💼 Customer retention and churn analytics
 
 The overall objective is to develop **end-to-end AI solutions**, from understanding the problem and data to model development, evaluation, explainability, and deployment-oriented thinking.
 
@@ -255,6 +256,28 @@ Focus areas:
 
 ---
 
+### 15. AI-Powered Customer Retention Analytics
+
+**Domain:** Customer Analytics / Predictive Modeling / Churn Prediction
+
+Focus areas:
+
+- Customer churn prediction
+- Retention analysis
+- Customer lifetime value
+- Risk scoring and segmentation
+- Feature engineering and model explainability
+- Business impact estimation
+
+**Technologies:**
+
+`Python` `Pandas` `NumPy` `Scikit-learn` `XGBoost` `SHAP` `Matplotlib` `Seaborn`
+
+📂 **Project:**  
+`15.AI-Powered Customer Retention Analytics/`
+
+---
+
 # 🔵 Computer Vision
 
 ## 07. Street View Blurring System — YOLOv8
@@ -305,7 +328,7 @@ Privacy-Protected Image
 
 **Domain:** Computer Vision / Safety AI / Deep Learning
 
-A deep learning project that classifies a driver's facial image as **Drowsy** or **Non-Drowsy** using transfer learning with **MobileNetV2**. The workflow includes dataset inspection, face detection, image preprocessing, model training, evaluation, and edge deployment using TensorFlow Lite.
+A deep learning project that classifies a driver's facial image as **Drowsy** or **Non-Drowsy** using transfer learning with **MobileNetV2**. The workflow includes dataset inspection, face detection, preprocessing, model training, evaluation, and TFLite conversion for deployment.
 
 ### Workflow
 
@@ -586,6 +609,7 @@ AIPROJECT/
 ├── 12.Predicting Sales from Campaign Data/
 ├── 13.Vendor-Verdict-AI/
 ├── 14.Driver Drowsiness Detection System/
+├── 15.AI-Powered Customer Retention Analytics/
 ├── demo_Live_Class_Notebook.ipynb
 ├── README.md
 └── .gitignore
@@ -678,6 +702,7 @@ Grounded Response
 | 🧬 LLM Fine-Tuning | LoRA / PEFT |
 | 🛡️ AI Governance | Vendor trust, evidence-based compliance, security and privacy assessment |
 | 🔬 Explainable AI | SHAP and model interpretation |
+| 💼 Customer Analytics | Churn prediction, retention, risk scoring and business impact analysis |
 
 ---
 
@@ -841,6 +866,9 @@ This portfolio provides hands-on experience in:
 - AI Governance
 - Trustworthy AI
 - Security & Privacy Compliance
+- Customer Retention Analysis
+- Churn Prediction
+- Retention Strategy Modeling
 
 ---
 
@@ -863,6 +891,7 @@ The repository will continue to evolve toward production-oriented AI engineering
 - [ ] Add LLM observability
 - [ ] Add AI governance dashboards
 - [ ] Add production-ready AI pipelines
+- [ ] Add customer retention dashboards
 
 ---
 
@@ -877,6 +906,7 @@ The portfolio is organized around four major AI engineering areas:
 | 👁️ **Deep Learning** | Computer vision and neural networks |
 | 🧠 **Generative AI** | RAG, LLMs, embeddings and fine-tuning |
 | 🛡️ **AI Governance** | Trust and risk assessment for AI adoption |
+| 💼 **Customer Intelligence** | Retention, churn prevention, and business actionability |
 
 ---
 
@@ -959,3 +989,4 @@ https://github.com/gangadharp2010/AIPROJECT
 ## 📬 Contact
 
 For collaboration, technical discussions, feedback, or project discussions, connect through GitHub.
+
