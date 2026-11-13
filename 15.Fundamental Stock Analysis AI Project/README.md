@@ -133,7 +133,6 @@ Dependencies are listed in [requirements.txt](requirements.txt).
 ├── requirements.txt
 ├── Dockerfile
 ├── run-docker.ps1
-├── .env.example                   # Create this file if it is not present
 ├── .dockerignore
 └── .gitignore
 ```
@@ -297,6 +296,16 @@ Try another provider-supported ticker symbol and check whether the company has c
 ### OpenAI request failures
 
 Check API key validity, model access, network connectivity, and the configured timeout. Avoid printing secrets while debugging.
+
+## Known integration gaps
+
+The repository contains the specialist modules and valuation utilities, but a few interfaces should be aligned before relying on valuation output end to end:
+
+- The valuation agent currently passes the complete ratios dictionary as the first argument to `run_dcf_model`, while the calculator expects a numeric free-cash-flow value. As written, the calculator will return no DCF scenario for that input.
+- The peer-multiple helper reads sector and peer fields from the top level of the fetched snapshot, although the financial snapshot stores company profile values inside `company_info`. This can leave the peer candidate set empty or incomplete.
+- The report writer looks for valuation keys named `analysis` and `dcf_scenario`, while the valuation agent currently returns `dcf_valuation` and `peer_multiples`. Consequently, valuation context may not be included in the synthesized final report as intended.
+
+These are implementation items to resolve; the README describes the architecture and utilities present in the repository, not a claim that every valuation path is already fully integrated.
 
 ## Possible next enhancements
 
