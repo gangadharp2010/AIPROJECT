@@ -1,7 +1,7 @@
 # Fundamental Stock Analysis AI Agent
 
 <p align="center">
-  <img src="assets/fundamental_stock_analysis_banner.svg" alt="Fundamental Stock Analysis AI Agent banner" width="100%" />
+  <img src="https://raw.githubusercontent.com/gangadharp2010/AIPROJECT/main/15.Fundamental%20Stock%20Analysis%20AI%20Project/assets/fundamental_stock_analysis_banner.svg" alt="Fundamental Stock Analysis AI Agent banner" width="100%" />
 </p>
 
 <p align="center">
@@ -16,8 +16,6 @@
 [![OpenAI](https://img.shields.io/badge/OpenAI-LLM-412991?logo=openai&logoColor=white)](https://platform.openai.com/)
 [![Yahoo Finance](https://img.shields.io/badge/Data-Yahoo%20Finance-6001D2)](https://finance.yahoo.com/)
 [![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?logo=docker&logoColor=white)](https://www.docker.com/)
-
-
 
 An AI-assisted stock research application that brings together company financials, recent news headlines, risk commentary, peer-multiple context, and an illustrative discounted cash flow (DCF) scenario into one readable research brief.
 
@@ -99,9 +97,8 @@ flowchart TD
 ### Agent workflow
 
 <p align="center">
-  <img src="assets/fundamental_analysis_workflow.svg" alt="Multi-agent stock analysis workflow" width="100%" />
+  <img src="https://raw.githubusercontent.com/gangadharp2010/AIPROJECT/main/15.Fundamental%20Stock%20Analysis%20AI%20Project/assets/fundamental_analysis_workflow.svg" alt="Fundamental analysis multi-agent workflow" width="100%" />
 </p>
-
 
 The code is organized around specialist agents and reusable data tools.
 
