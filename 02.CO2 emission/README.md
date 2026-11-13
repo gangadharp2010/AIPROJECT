@@ -129,7 +129,7 @@ The analysis can support automotive and environmental decision-making by helping
 
 ## 📓 Notebook
 
-The complete analysis, including data exploration, visualizations, preprocessing, model development, and evaluation, is available in the Google Colab notebook included with this project.
+The repository currently contains the emissions CSV, dataset description, approach document, and final visualization/report PDF. A runnable notebook is not currently present in this project folder. Add or link the notebook if you want users to reproduce the full preprocessing, modeling, and evaluation workflow.
 
 ---
 
@@ -162,10 +162,9 @@ CO2-Emission-Case-Study/
 ## 🚀 How to Run
 
 1. Clone this repository.
-2. Open the `.ipynb` notebook using Google Colab or Jupyter Notebook.
-3. Download the required dataset from the case study source.
-4. Upload the dataset to the notebook environment.
-5. Run the notebook cells sequentially.
+2. Review the approach document and dataset description.
+3. Inspect `CO2_Emissions.csv` and the final visualization/report PDF.
+4. To reproduce the modeling workflow, add the original notebook or create a new notebook using the supplied dataset and documented objectives.
 
 ---
 
