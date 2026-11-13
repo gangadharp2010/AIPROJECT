@@ -268,6 +268,35 @@ Focus areas:
 
 ---
 
+### 17. Trip Buddy AI — Intelligent Travel Planning Agent with MCP
+
+**Domain:** Agentic AI / Generative AI / Travel Technology
+
+A conversational travel assistant that combines Model Context Protocol (MCP), retrieval-augmented generation (RAG), and persistent conversation memory to help users explore destinations, estimate trip costs, compare options against a budget, and retrieve travel knowledge.
+
+**Implemented capabilities:**
+
+- Gradio-based conversational interface
+- Custom Python travel agent and response formatting
+- MCP client with separate Travel and Knowledge MCP servers
+- Travel tools for destination discovery, trip-cost estimation, and budget-based destination search
+- RAG-based travel knowledge retrieval
+- SQLite-backed conversation history and extracted travel preferences
+- Project-specific dependency management and Docker configuration
+- Test module(s) for conversation memory and MCP-related functionality
+
+**Technologies:**
+
+`Python 3.12` `Gradio` `OpenAI API` `MCP SDK 1.x` `RAG` `SQLite` `Docker`
+
+📂 **Project:**  
+[Open Trip Buddy AI — Travel Agent with MCP](17.Trip%20AI%20Agent%20with%20MCP/trip_buddy_agent/)
+
+📄 **Project documentation:**  
+[Trip Buddy AI README](17.Trip%20AI%20Agent%20with%20MCP/trip_buddy_agent/README.md)
+
+---
+
 ### 16. AI-Powered Customer Retention Analytics
 
 **Domain:** Customer Analytics / Predictive Modeling / Churn Prediction
@@ -914,14 +943,17 @@ This roadmap reflects the repository structure currently checked into `main`. A 
 
 ## ✅ Already represented in the repository
 
-- [x] Project-level documentation for several projects, including Vendor Verdict AI, LoRA fine-tuning, Driver Drowsiness Detection, Customer Retention Analytics, and Fundamental Stock Analysis
-- [x] Project-specific dependency files for selected projects, including Customer Retention Analytics and Fundamental Stock Analysis
+- [x] Project-level documentation for several projects, including Vendor Verdict AI, LoRA fine-tuning, Driver Drowsiness Detection, Customer Retention Analytics, Fundamental Stock Analysis, and Trip Buddy AI
+- [x] Project-specific dependency files for selected projects, including Customer Retention Analytics, Fundamental Stock Analysis, and Trip Buddy AI
 - [x] Model evaluation and metric-oriented work in selected notebooks and the Vendor Verdict evaluation utilities
-- [x] Docker packaging for the Fundamental Stock Analysis application
-- [x] Streamlit application for the Fundamental Stock Analysis project
+- [x] Docker packaging for the Fundamental Stock Analysis and Trip Buddy AI applications
+- [x] Streamlit application for Fundamental Stock Analysis and Gradio interface for Trip Buddy AI
 - [x] Customer retention / churn analysis project
 - [x] Fundamental stock analysis workflow with financial, news, risk, and valuation components
 - [x] RAG and LoRA fine-tuning learning projects
+- [x] MCP-based agent architecture with separate travel and knowledge servers in Trip Buddy AI
+- [x] RAG travel knowledge retrieval and SQLite-backed conversation memory in Trip Buddy AI
+- [x] Test code for selected Trip Buddy AI components
 - [x] Trustworthy-AI / vendor assessment work through Vendor Verdict AI
 
 ## 🚧 Improve consistency and completeness
@@ -958,7 +990,7 @@ The portfolio is organized around four major AI engineering areas:
 | 📊 **Data & Analytics** | Business insights and data-driven decision making |
 | 🤖 **Machine Learning** | Predictive modeling and recommendation systems |
 | 👁️ **Deep Learning** | Computer vision and neural networks |
-| 🧠 **Generative AI** | RAG, LLMs, embeddings and fine-tuning |
+| 🧠 **Generative AI** | RAG, LLMs, embeddings, fine-tuning, MCP-based agents and conversational assistants |
 | 🛡️ **AI Governance** | Trust and risk assessment for AI adoption |
 | 💼 **Customer Intelligence** | Retention, churn prevention, and business actionability |
 | 📈 **Financial Intelligence** | Fundamental stock analysis and company screening |
