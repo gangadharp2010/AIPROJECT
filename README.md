@@ -908,27 +908,44 @@ This portfolio provides hands-on experience in:
 
 ---
 
-# 🛣️ Future Roadmap
+# 🛣️ Roadmap & Engineering Maturity
 
-The repository will continue to evolve toward production-oriented AI engineering.
+This roadmap reflects the repository structure currently checked into `main`. A capability is marked **present** when a corresponding project artifact exists; this does not automatically mean it is production-hardened or consistently implemented across every project.
 
-- [ ] Standardize README files for every project
-- [ ] Add project-specific `requirements.txt`
-- [ ] Add model evaluation reports
-- [ ] Add experiment tracking
-- [ ] Add MLflow
-- [ ] Add automated testing
-- [ ] Add CI/CD pipelines
-- [ ] Add Docker support
-- [ ] Add MLOps workflows
-- [ ] Add model-serving APIs
-- [ ] Add Streamlit applications
-- [ ] Add RAG evaluation dashboards
-- [ ] Add LLM observability
-- [ ] Add AI governance dashboards
-- [ ] Add production-ready AI pipelines
-- [ ] Add customer retention dashboards
-- [ ] Add stock analysis dashboards and valuation reports
+## ✅ Already represented in the repository
+
+- [x] Project-level documentation for several projects, including Vendor Verdict AI, LoRA fine-tuning, Driver Drowsiness Detection, Customer Retention Analytics, and Fundamental Stock Analysis
+- [x] Project-specific dependency files for selected projects, including Customer Retention Analytics and Fundamental Stock Analysis
+- [x] Model evaluation and metric-oriented work in selected notebooks and the Vendor Verdict evaluation utilities
+- [x] Docker packaging for the Fundamental Stock Analysis application
+- [x] Streamlit application for the Fundamental Stock Analysis project
+- [x] Customer retention / churn analysis project
+- [x] Fundamental stock analysis workflow with financial, news, risk, and valuation components
+- [x] RAG and LoRA fine-tuning learning projects
+- [x] Trustworthy-AI / vendor assessment work through Vendor Verdict AI
+
+## 🚧 Improve consistency and completeness
+
+- [ ] Standardize README structure, setup steps, results, and screenshots across **all** projects
+- [ ] Add or validate a project-specific `requirements.txt` for each runnable Python project
+- [ ] Publish reproducible model evaluation reports with baselines, metrics, validation strategy, and limitations
+- [ ] Add automated unit and integration tests for reusable code and application workflows
+- [ ] Add Docker support to projects where deployment is a meaningful goal
+- [ ] Add model-serving APIs where a project needs a programmatic inference interface
+- [ ] Improve the Customer Retention Analytics project with a documented, reproducible dashboard and deployment path
+- [ ] Complete and validate the Fundamental Stock Analysis valuation integration, then add downloadable reports and richer dashboard views
+
+## 🎯 Planned platform and MLOps capabilities
+
+- [ ] Add experiment tracking and model registry workflows (for example, MLflow)
+- [ ] Establish CI/CD pipelines for linting, tests, builds, and deployment
+- [ ] Add end-to-end MLOps workflows for data/model versioning, reproducibility, and controlled releases
+- [ ] Add RAG evaluation dashboards for retrieval quality, groundedness, and answer relevance
+- [ ] Add LLM observability for traces, latency, token usage, errors, and cost
+- [ ] Build AI governance dashboards for model risk, evidence, explainability, and review status
+- [ ] Develop production-grade AI pipelines with monitoring, fallback behavior, security controls, and operational documentation
+
+> **Scope note:** The checked items above mean the repository contains a project, notebook, script, or application related to that capability. They are not claims of full production readiness. The unchecked items are cross-project improvements or future platform capabilities, not features that should be assumed to exist today.
 
 ---
 
