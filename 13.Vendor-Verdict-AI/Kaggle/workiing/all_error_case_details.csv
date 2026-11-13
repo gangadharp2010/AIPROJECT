@@ -1,0 +1,11 @@
+case_id,vendor,legal_entity,official_domain,hq_country,hq_city,product,tier,users,as_of,extracted_facts,security_certifications,data_regions,trains_on_customer_data,subprocessors,data_retention,sso_saml,security_incidents,dpa_available
+c0109,Brixwise AI,Brixwise Ltd,brixwise.example,Ireland,Dublin,an AI writing tool that drafts customer email replies,T3,120,2026-11-01,{},True,True,True,True,True,True,True,True
+c0166,Rilostack AI,Rilostack Ltd,rilostack.example,United Kingdom,London,an AI assistant that summarises customer-support tickets,T3,35,2026-11-01,{},False,True,False,True,True,True,True,True
+c0269,Kestdesk Labs,Kestdesk Corp,kestdesk.example,United States,Seattle,a résumé-screening assistant,T3,12,2026-11-01,{},False,True,True,True,False,True,True,False
+c0308,Vantagrid AI,Vantagrid Ltd,vantagrid.example,United Kingdom,Manchester,a meeting-notes assistant that transcribes and summarises calls,T3,120,2026-11-01,{},True,True,True,True,True,True,True,True
+c0329,Soraflow,Soraflow Inc,soraflow.example,Canada,Vancouver,a document Q&A assistant over internal wikis,T3,12,2026-11-01,{},False,True,True,True,True,True,False,True
+c0421,Ostrahub Cloud,Ostrahub Inc,ostrahub.example,Canada,Toronto,an invoice-matching tool that reads supplier invoices,T2,8,2026-11-01,{},True,True,True,True,True,False,True,True
+c0440,Ulvastack,Ulvastack Ltd,ulvastack.example,Ireland,Dublin,a sales-call coaching tool,T3,35,2026-11-01,{},True,False,False,True,True,True,False,True
+c0582,Vantaloop,Vantaloop BV,vantaloop.example,Netherlands,Amsterdam,a contract-analysis assistant,T3,5,2026-11-01,{},True,True,True,True,True,True,False,True
+c0601,Aldervale AI,Aldervale Inc,aldervale.example,Canada,Vancouver,a translation service for chat and email,T3,250,2026-11-01,{},False,False,True,True,True,True,True,True
+c0613,Soravale,Soravale Pte Ltd,soravale.example,Singapore,Singapore,an invoice-matching tool that reads supplier invoices,T3,5,2026-11-01,{},True,True,True,True,True,True,False,True

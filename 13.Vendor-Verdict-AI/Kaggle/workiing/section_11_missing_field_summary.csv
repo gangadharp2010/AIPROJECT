@@ -1,0 +1,9 @@
+requirement_id,mapped_field,field_status,count
+AI-2.1,trains_on_customer_data,FIELD_PRESENT,1
+DP-3.1,data_regions,FIELD_PRESENT,1
+DP-3.2,data_regions,FIELD_PRESENT,1
+DP-5.4,data_retention,FIELD_PRESENT,2
+OVERALL,,UNMAPPED_REQUIREMENT,2
+SEC-4.2,security_certifications,FIELD_PRESENT,4
+SEC-7.1,sso_saml,FIELD_PRESENT,1
+SEC-9.3,security_incidents,FIELD_PRESENT,2

@@ -1,0 +1,15 @@
+id,case_id,requirement_id,verdict,predicted_verdict,is_overall,vendor,correct,mapped_field,actual_extracted_value,extraction_status
+c0109__SEC-4.2,c0109,SEC-4.2,PASS,NEEDS_REVIEW,False,Brixwise AI,False,security_certifications,"[{""name"": ""SOC 2 Type II"", ""status"": ""certified"", ""date"": null, ""valid_until"": null}]",FIELD_EXTRACTED
+c0166__SEC-4.2,c0166,SEC-4.2,FAIL,UNKNOWN,False,Rilostack AI,False,security_certifications,,FIELD_NOT_EXTRACTED
+c0269__SEC-4.2,c0269,SEC-4.2,FAIL,UNKNOWN,False,Kestdesk Labs,False,security_certifications,,FIELD_NOT_EXTRACTED
+c0269__OVERALL,c0269,OVERALL,BLOCKED,CONDITIONAL,True,Kestdesk Labs,False,,,NO_FIELD_MAPPING
+c0308__DP-3.1,c0308,DP-3.1,FAIL,UNKNOWN,False,Vantagrid AI,False,data_regions,"{""available"": [], ""planned"": [""Canada"", ""United Kingdom""]}",FIELD_EXTRACTED
+c0308__OVERALL,c0308,OVERALL,BLOCKED,CONDITIONAL,True,Vantagrid AI,False,,,NO_FIELD_MAPPING
+c0329__SEC-9.3,c0329,SEC-9.3,NEEDS_REVIEW,UNKNOWN,False,Soraflow,False,security_incidents,,FIELD_NOT_EXTRACTED
+c0421__DP-3.2,c0421,DP-3.2,PASS,UNKNOWN,False,Ostrahub Cloud,False,data_regions,"{""available"": [], ""planned"": [""Germany"", ""India"", ""United Kingdom""]}",FIELD_EXTRACTED
+c0440__DP-5.4,c0440,DP-5.4,NEEDS_REVIEW,FAIL,False,Ulvastack,False,data_retention,"{""default_days"": null, ""deletion_on_request_days"": 90}",FIELD_EXTRACTED
+c0440__SEC-7.1,c0440,SEC-7.1,PASS,NEEDS_REVIEW,False,Ulvastack,False,sso_saml,"""enterprise_only""",FIELD_EXTRACTED
+c0582__DP-5.4,c0582,DP-5.4,NEEDS_REVIEW,PASS,False,Vantaloop,False,data_retention,"{""default_days"": 14, ""deletion_on_request_days"": 14}",FIELD_EXTRACTED
+c0582__SEC-9.3,c0582,SEC-9.3,NEEDS_REVIEW,UNKNOWN,False,Vantaloop,False,security_incidents,,FIELD_NOT_EXTRACTED
+c0601__AI-2.1,c0601,AI-2.1,PASS,NEEDS_REVIEW,False,Aldervale AI,False,trains_on_customer_data,"""no_on_paid_plans""",FIELD_EXTRACTED
+c0613__SEC-4.2,c0613,SEC-4.2,PASS,NEEDS_REVIEW,False,Soravale,False,security_certifications,"[{""name"": ""SOC 2 Type II"", ""status"": ""certified"", ""date"": null, ""valid_until"": null}]",FIELD_EXTRACTED
