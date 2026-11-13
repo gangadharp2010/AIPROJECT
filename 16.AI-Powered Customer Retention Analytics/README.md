@@ -1,98 +1,221 @@
 # AI-Powered Customer Retention Analytics
 
-This project demonstrates a practical **customer churn and retention prediction** workflow using machine learning. It focuses on identifying customers at risk of churn, understanding the drivers behind churn, and translating insights into business-friendly retention strategies.
+An end-to-end **customer churn prediction and retention analytics** project using Python and machine learning. The workflow identifies customers with elevated churn risk, explains important churn signals, groups customers into actionable risk segments, and translates model output into business-oriented retention recommendations.
 
-## Project Objective
+The project includes a Google Colab notebook named **`AI_Powered_Customer_Retention_Analytics.ipynb`**. It is designed to run from data loading through model evaluation and export of customer-level scoring outputs.
 
-Build an end-to-end predictive analytics solution that:
+## Project Objectives
 
-- detects customers likely to churn,
-- analyzes the key factors contributing to churn,
-- segments customers by risk level,
-- recommends retention actions for high-risk groups,
-- evaluates model performance with business relevance in mind.
+- Predict which customers are more likely to churn.
+- Explore customer behavior and identify patterns associated with churn.
+- Identify important predictive features using model explainability techniques.
+- Assign Low, Medium, and High churn-risk segments.
+- Generate example retention actions for high-risk customers.
+- Evaluate model quality using metrics that reflect class imbalance and business trade-offs.
+- Estimate illustrative retention campaign economics using editable assumptions.
 
-## Use Cases
+## End-to-End Workflow
 
-- Customer churn prediction
-- Retention strategy planning
-- Customer lifetime value analysis
-- Risk score generation
-- Marketing campaign prioritization
-- Explainable AI for business stakeholders
+```text
+Customer CSV / IBM Telco Churn Sample
+                 |
+                 v
+       Data Loading & Validation
+                 |
+                 v
+       Data Cleaning & EDA
+                 |
+                 v
+        Feature Engineering
+                 |
+                 v
+     Stratified Train / Validation / Test
+                 |
+                 v
+       Preprocessing Pipeline
+                 |
+                 v
+       Model Training & Comparison
+                 |
+                 v
+     Threshold Selection on Validation
+                 |
+                 v
+       Final Test-Set Evaluation
+                 |
+                 v
+    Feature Importance / Explainability
+                 |
+                 v
+       Customer Risk Segmentation
+                 |
+                 v
+      Retention Action Recommendations
+                 |
+                 v
+       Reports, Scores & Model Export
+```
+
+## Notebook Contents
+
+The Colab notebook is organized into the following sections:
+
+1. Environment setup and imports.
+2. Dataset loading, with automatic loading of the IBM Telco Customer Churn sample and a CSV upload fallback.
+3. Data quality checks, duplicate handling, missing-value review, and target normalization.
+4. Exploratory data analysis (EDA), including churn distribution and segment-level churn patterns.
+5. Feature engineering, including tenure bands, service counts, and a total-to-monthly-charge ratio when source fields are available.
+6. Stratified train, validation, and test split.
+7. Leakage-safe preprocessing with scikit-learn pipelines, numeric imputation/scaling, and categorical imputation/one-hot encoding.
+8. Model comparison using Logistic Regression, Random Forest, and Extra Trees.
+9. Decision-threshold selection using validation-set F2 score.
+10. Final test-set evaluation using accuracy, precision, recall, F1, ROC-AUC, PR-AUC, and a confusion matrix.
+11. Permutation feature importance, with optional SHAP analysis.
+12. Customer-level churn probability scoring and Low / Medium / High risk segmentation.
+13. Example retention action recommendations based on customer attributes.
+14. Illustrative retention economics scenario with editable assumptions.
+15. Export of model, metadata, evaluation results, feature importance, segment summaries, and customer scoring files.
+16. Optional scoring of a separate customer CSV with the same feature schema.
+
+## Dataset
+
+The notebook uses the **IBM Telco Customer Churn sample dataset** by default. It attempts to load the public CSV automatically. If the download is unavailable, upload a CSV through the Colab file-upload prompt.
+
+The default target column is `Churn`, with `Yes` representing churn and `No` representing retained customers. For another dataset, update `TARGET_COL` in the notebook and ensure its target labels can be mapped to binary churn / retained values.
+
+The notebook also supports common target column names such as `Exited`, `Attrition`, `target`, or `label`, provided you configure the exact column name.
+
+**Dataset source:** [IBM Telco Customer Churn sample](https://raw.githubusercontent.com/IBM/telco-customer-churn-on-icp4d/master/data/Telco-Customer-Churn.csv)
+
+## Run in Google Colab
+
+1. Open [Google Colab](https://colab.research.google.com/).
+2. Select **File → Upload notebook**.
+3. Upload `AI_Powered_Customer_Retention_Analytics.ipynb`.
+4. Select **Runtime → Run all**.
+5. If prompted, upload your own customer CSV. Otherwise, the notebook attempts to download the IBM sample.
+6. Review the generated model metrics, churn drivers, risk segments, and retention recommendations.
+7. Download the ZIP archive generated by the final notebook cell.
+
+Run the notebook cells in order. The notebook creates its outputs under `/content/customer_retention_outputs` and packages them into `customer_retention_analytics_outputs.zip`.
+
+## Machine Learning and Evaluation
+
+The notebook compares the following classification models:
+
+- Logistic Regression with class weighting as an interpretable baseline.
+- Random Forest with balanced class weights.
+- Extra Trees with balanced class weights.
+
+Preprocessing is fitted within scikit-learn pipelines to avoid fitting transformations on validation or test data. The data is split using stratification. The validation set is used for model comparison and threshold selection; the held-out test set is reserved for final evaluation.
+
+Reported metrics include:
+
+| Metric | Why it matters |
+|---|---|
+| Accuracy | Overall proportion of correct predictions; interpret alongside class balance. |
+| Precision | Of customers flagged as churn risks, how many actually churned. |
+| Recall | Of customers who churned, how many the model identified. |
+| F1-score | Balance between precision and recall. |
+| ROC-AUC | Ranking quality across classification thresholds. |
+| PR-AUC | Precision-recall performance, especially useful with imbalanced churn labels. |
+| Confusion matrix | Counts of true/false positives and negatives at the selected threshold. |
+
+The decision threshold is selected using validation-set F2 score to place greater emphasis on recall. The threshold is configurable and should ultimately reflect the cost of missed churners, contact capacity, and the cost of retention offers.
+
+## Explainability and Customer Segmentation
+
+- **Permutation importance** ranks input features by the reduction in test ROC-AUC when each feature is shuffled.
+- **Optional SHAP** can be enabled in the notebook for additional model explanations, subject to estimator and environment compatibility.
+- **Risk segments** use configurable probability bands:
+  - Low: predicted probability below 0.40
+  - Medium: 0.40 to below 0.70
+  - High: 0.70 or above
+
+These are example operating bands, not universal standards. Calibrate probabilities and validate thresholds for the intended business before operational use.
+
+## Retention Recommendations and Business Outputs
+
+The notebook generates example actions such as onboarding follow-up for newer customers, contract or plan reviews, service-support checks, and billing/plan-fit reviews. These are decision-support suggestions, not automatic customer communications.
+
+The retention economics section estimates a hypothetical campaign scenario using editable assumptions for save rate, offer cost, contact cost, margin, and retained months. It is not a causal estimate of campaign impact.
+
+The notebook exports:
+
+- `model_comparison.csv`
+- `threshold_analysis.csv`
+- `permutation_feature_importance.csv`
+- `risk_segment_summary.csv`
+- `customer_churn_scores.csv`
+- `retention_priority_customers.csv`
+- `retention_economics_scenario.csv`
+- `test_evaluation_metrics.csv`
+- `model_metadata.json`
+- `customer_churn_pipeline.joblib`
+
+All files are packaged into a ZIP archive for download from Colab.
 
 ## Tech Stack
 
 - Python
-- Pandas
-- NumPy
+- Pandas and NumPy
 - Scikit-learn
-- XGBoost
-- SHAP
-- Matplotlib
-- Seaborn
-- Jupyter Notebook
+- Matplotlib and Seaborn
+- Joblib
+- Optional: SHAP for additional explainability
+- Google Colab / Jupyter Notebook
 
-## Workflow
+The repository's `requirements.txt` also lists XGBoost and Jupyter. The current notebook's core model comparison does not require XGBoost; SHAP is optional and can be installed from the notebook when enabled.
 
-```text
-Customer Data
-   ↓
-Data Cleaning
-   ↓
-Exploratory Data Analysis
-   ↓
-Feature Engineering
-   ↓
-Train/Test Split
-   ↓
-Model Training
-   ↓
-Evaluation
-   ↓
-Churn Insights
-   ↓
-Retention Action Plan
-```
+## Local Environment Setup
 
-## Key Features
-
-- Data preprocessing and feature engineering
-- Churn classification using ML algorithms
-- Model benchmarking with accuracy, precision, recall, F1-score, and ROC-AUC
-- Feature importance and SHAP-based explainability
-- Customer risk segmentation
-- Decision support for retention initiatives
-
-## Requirements
-
-Create a virtual environment and install dependencies:
+Create and activate a virtual environment, then install the project dependencies:
 
 ```bash
 python -m venv .venv
-source .venv/bin/activate   # Linux/macOS
-# .venv\Scripts\activate    # Windows
+
+# Linux / macOS
+source .venv/bin/activate
+
+# Windows PowerShell
+.venv\\Scripts\\Activate.ps1
+
 pip install -r requirements.txt
 ```
 
-## Requirements File
+For the intended Colab workflow, a local environment is not required because the notebook installs its core dependencies in the runtime.
 
-The project includes a `requirements.txt` file listing the packages needed for notebook execution and model training.
+## Responsible Use and Limitations
 
-## Suggested Deliverables
+- The default IBM sample is a cross-sectional dataset; it does not provide a complete longitudinal view of customer behavior.
+- A predicted churn probability is a model estimate, not certainty that a customer will churn.
+- Feature importance describes predictive association, not causation.
+- A retention offer is not proven effective merely because it is recommended by the model. Measure intervention outcomes through controlled experiments where possible.
+- Validate probability calibration, thresholds, data drift, and model performance before production deployment.
+- Review model performance across relevant customer groups and investigate potential disparate impact.
+- Respect privacy, data protection, and customer marketing-consent requirements. Keep customer-level exports secure.
+- Do not use this educational notebook as the sole basis for automated adverse customer decisions.
 
-- Cleaned dataset and preprocessing notebook
-- Churn prediction model notebook
-- Evaluation metrics report
-- Feature importance and SHAP analysis
-- Retention recommendations summary
+## Suggested Future Enhancements
 
-## Typical Business Outcome
+- Time-based validation and periodic retraining using longitudinal customer records.
+- Probability calibration and cost-sensitive threshold optimization.
+- Customer lifetime value (CLV) integration and retention budget optimization.
+- A/B testing framework to measure incremental retention campaign impact.
+- Model monitoring, drift detection, and experiment tracking with MLflow.
+- Batch scoring API or dashboard for integration with CRM platforms.
 
-This project helps organizations reduce customer loss by identifying high-risk segments early and prioritizing interventions based on the biggest drivers of churn.
+## Project Structure
+
+```text
+16.AI-Powered Customer Retention Analytics/
+├── README.md
+├── requirements.txt
+└── AI_Powered_Customer_Retention_Analytics.ipynb
+```
+
+The notebook can be uploaded to this folder in the repository after downloading it from the conversation.
 
 ---
 
-## Project Folder
-
-`15.AI-Powered Customer Retention Analytics/`
+**Project focus:** connect churn prediction with explainability, risk prioritization, and measurable customer-retention planning.
