@@ -508,54 +508,47 @@ Fine-Tuned Model
 `11.Project TuneCraft(LORA FINE TUNING)/`
 
 ---
-### 15. Fundamental Stock Analysis AI Project
+### 15. Fundamental Stock Analysis AI Agent
 
-**Domain:** Financial Analytics / Fundamental Analysis / AI-Assisted Decision Support
+**Domain:** Financial Analytics / Fundamental Analysis / Agentic AI / Investment Research
 
-Focus areas:
-
-- Fundamental analysis of company and stock data
-- Financial statement and business performance analysis
-- Revenue, profitability, and valuation metrics
-- Financial data cleaning and feature engineering
-- Company comparison and screening
-- Data-driven insights to support investment research
-
-**Technologies:**
-
-`Python` `Pandas` `NumPy` `Scikit-learn` `Matplotlib` `Seaborn` `Jupyter`
-
-📂 **Project:**  
-[Open Fundamental Stock Analysis AI Project](15.Fundamental%20Stock%20Analysis%20AI%20Project/README.md)
----
-
-### 17. Trip Buddy AI — Intelligent Travel Planning Agent with MCP
-
-**Domain:** Agentic AI / Generative AI / Travel Technology
-
-A conversational travel assistant that combines Model Context Protocol (MCP), retrieval-augmented generation (RAG), and persistent conversation memory to help users explore destinations, estimate trip costs, compare options against a budget, and retrieve travel knowledge.
+An AI-assisted stock research application that coordinates specialist agents to analyze a company’s available financial data, recent news, business risks, and valuation scenarios. It brings the findings together into a structured research brief through a Streamlit interface or command-line report workflow.
 
 **Implemented capabilities:**
 
-- Gradio-based conversational interface
-- Custom Python travel agent and response formatting
-- MCP client with separate Travel and Knowledge MCP servers
-- Travel tools for destination discovery, trip-cost estimation, and budget-based destination search
-- RAG-based travel knowledge retrieval
-- SQLite-backed conversation history and extracted travel preferences
-- Project-specific dependency management and Docker configuration
-- Test module(s) for conversation memory and MCP-related functionality
+- Multi-agent orchestration for financial analysis, news and sentiment, risk assessment, valuation, and report synthesis
+- Company profile, selected financial statements, key ratios, cash-flow data, and recent headlines retrieval using Yahoo Finance via `yfinance`
+- Financial health analysis covering revenue, profitability, margins, cash flow, return on equity, leverage, and liquidity where data is available
+- News headline sentiment analysis with uncertainty handling
+- Evidence-based risk review covering leverage, liquidity, cash-flow quality, beta, and relevant headline risks
+- Illustrative discounted cash flow (DCF) scenario calculation using explicit growth, discount-rate, and terminal-growth assumptions
+- Sector-based peer-multiple retrieval for comparative context
+- Parallel execution of independent financial, news, and risk analysis agents
+- Consolidated research report with rating category, supporting evidence, risks, and bull/base/bear considerations
+- Streamlit dashboard to submit a ticker and review the final, financial, news, risk, and valuation outputs
+- CLI report generation with Markdown and JSON outputs
+- Short-lived in-memory data caching, Docker packaging, and project-specific dependencies
+- Sample Markdown and JSON reports for AAPL, GOOGL, and RELIANCE.NS
+
+**Agent architecture:**
+
+`Orchestrator` → `Financial Data Agent` + `News & Sentiment Agent` + `Risk Agent` → `Valuation Agent` → `Report Writer Agent`
 
 **Technologies:**
 
-`Python 3.12` `Gradio` `OpenAI API` `MCP SDK 1.x` `RAG` `SQLite` `Docker`
+`Python 3.12` `OpenAI API` `Agentic AI` `Multi-Agent Orchestration` `Streamlit` `yfinance` `Pandas` `NumPy` `DCF Valuation` `Docker`
+
+**Reports and project assets:**
+
+- [Project README and setup instructions](15.Fundamental%20Stock%20Analysis%20AI%20Project/README.md)
+- [Sample AAPL report](15.Fundamental%20Stock%20Analysis%20AI%20Project/reports/AAPL_fundamental_report.md)
+- [Sample GOOGL report](15.Fundamental%20Stock%20Analysis%20AI%20Project/reports/GOOGL_fundamental_report.md)
+- [Sample RELIANCE.NS report](15.Fundamental%20Stock%20Analysis%20AI%20Project/reports/RELIANCE.NS_fundamental_report.md)
 
 📂 **Project:**  
-[Open Trip Buddy AI — Travel Agent with MCP](17.Trip%20AI%20Agent%20with%20MCP/trip_buddy_agent/)
+[Open Fundamental Stock Analysis AI Agent](15.Fundamental%20Stock%20Analysis%20AI%20Project/)
 
-📄 **Project documentation:**  
-[Trip Buddy AI README](17.Trip%20AI%20Agent%20with%20MCP/trip_buddy_agent/README.md)
-
+> **Responsible-use note:** This is an educational research and decision-support application, not personalized investment advice. Financial data may be delayed or incomplete, and DCF values are assumption-driven scenarios rather than forecasts or price targets. Missing evidence should be reported as unconfirmed rather than invented.
 ---
 
 # 🧠 Skills & Technologies
