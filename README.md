@@ -13,7 +13,7 @@
 
 ## 📌 About This Repository
 
-This repository represents my **AI/ML learning and project portfolio**, covering the journey from traditional data analytics and machine learning to modern **Generative AI, Retrieval-Augmented Generation, Computer Vision, Recommendation Systems, and trustworthy AI / governance workflows**.
+This repository represents my **AI/ML learning and project portfolio**, covering the journey from traditional data analytics and machine learning to modern **Generative AI, Retrieval-Augmented Generation, Computer Vision, and Edge-AI applications**.
 
 The projects focus on practical business and technical problems including:
 
@@ -30,6 +30,7 @@ The projects focus on practical business and technical problems including:
 - 🔎 Domain-specific RAG
 - 🛡️ AI governance and vendor risk assessment
 - 🧠 LLM fine-tuning using LoRA / PEFT
+- 🚗 Driver drowsiness and road safety monitoring
 
 The overall objective is to develop **end-to-end AI solutions**, from understanding the problem and data to model development, evaluation, explainability, and deployment-oriented thinking.
 
@@ -300,6 +301,55 @@ Privacy-Protected Image
 
 ---
 
+## 14. Driver Drowsiness Detection System
+
+**Domain:** Computer Vision / Safety AI / Deep Learning
+
+A deep learning project that classifies a driver's facial image as **Drowsy** or **Non-Drowsy** using transfer learning with **MobileNetV2**. The workflow includes dataset inspection, face detection, image preprocessing, model training, evaluation, and edge deployment using TensorFlow Lite.
+
+### Workflow
+
+```text
+Image Dataset
+     │
+     ▼
+Dataset Inspection
+     │
+     ▼
+Face Detection / Face Cropping
+     │
+     ▼
+Preprocessing & Augmentation
+     │
+     ▼
+MobileNetV2 Transfer Learning
+     │
+     ▼
+Training / Validation / Evaluation
+     │
+     ▼
+TFLite Conversion & Inference
+```
+
+### Key Capabilities
+
+- Driver fatigue detection
+- Facial image classification
+- Face detection and cropping
+- Image augmentation and preprocessing
+- Transfer learning with MobileNetV2
+- Safety-focused evaluation and threshold tuning
+- TensorFlow Lite deployment for edge inference
+
+**Technologies:**
+
+`Python` `TensorFlow` `Keras` `MobileNetV2` `OpenCV` `Dlib` `NumPy` `Pandas` `Matplotlib` `Scikit-learn`
+
+📂 **Project:**  
+`14.Driver Drowsiness Detection System/`
+
+---
+
 # 🟣 Generative AI & LLM Projects
 
 ## 10. Domain-Specific RAG System
@@ -461,17 +511,23 @@ Fine-Tuned Model
 ## 🧠 Deep Learning
 
 - PyTorch
+- TensorFlow
+- Keras
 - Neural Networks
 - Transfer Learning
 - Computer Vision
+- MobileNetV2
 
 ## 👁️ Computer Vision
 
 - YOLOv8
 - OpenCV
+- Dlib
 - Object Detection
+- Face Detection
 - Image Processing
 - Image Anonymization
+- Driver Monitoring
 
 ## ✨ Generative AI
 
@@ -529,6 +585,7 @@ AIPROJECT/
 ├── 11.Project TuneCraft(LORA FINE TUNING)/
 ├── 12.Predicting Sales from Campaign Data/
 ├── 13.Vendor-Verdict-AI/
+├── 14.Driver Drowsiness Detection System/
 ├── demo_Live_Class_Notebook.ipynb
 ├── README.md
 └── .gitignore
@@ -614,8 +671,8 @@ Grounded Response
 | 🤖 Machine Learning | Classification, regression, clustering |
 | 🎯 Recommendation Systems | Product personalization |
 | 📈 Predictive Analytics | CTR, ride-hailing, content performance, campaign sales forecasting |
-| 👁️ Computer Vision | YOLOv8, image anonymization |
-| 🧠 Deep Learning | Neural networks and vision |
+| 👁️ Computer Vision | YOLOv8, image anonymization, driver safety monitoring |
+| 🧠 Deep Learning | Neural networks, vision, MobileNetV2-based classification |
 | ✨ Generative AI | LLM applications |
 | 🔎 RAG | Domain-specific knowledge retrieval |
 | 🧬 LLM Fine-Tuning | LoRA / PEFT |
@@ -773,6 +830,7 @@ This portfolio provides hands-on experience in:
 - Explainable AI
 - Computer Vision
 - Object Detection
+- Driver Drowsiness Detection
 - Generative AI
 - Retrieval-Augmented Generation
 - Vector Search
