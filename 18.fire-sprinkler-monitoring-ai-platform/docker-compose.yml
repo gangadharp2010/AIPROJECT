@@ -16,7 +16,7 @@ services:
     build: ./src/api
     environment:
       ASPNETCORE_URLS: http://+:8080
-      ConnectionStrings__Default: Host=postgres;Port=5432;Database=firesprinkler;Username=appuser;Password=localdev_password_change_me
+      ConnectionStrings__Default: Host=postgres;Port=5432;Database=firesprinkler;Username=appuser;Password=admin@123
       Analytics__BaseUrl: http://ml-service:8001
     ports: ["8080:8080"]
     depends_on:

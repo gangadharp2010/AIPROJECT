@@ -1,0 +1,29 @@
+
+services:
+  ml-service:
+    build:
+      context: ./src/ml-service
+      dockerfile: Dockerfile
+    command: uvicorn app.ai_pipeline:app --host 0.0.0.0 --port 8001
+    environment:
+      DATABASE_URL: postgresql://appuser:admin@123@postgres:5432/firesprinkler
+      AZURE_OPENAI_ENDPOINT: ${AZURE_OPENAI_ENDPOINT:-}
+      AZURE_OPENAI_API_KEY: ${AZURE_OPENAI_API_KEY:-}
+      AZURE_OPENAI_DEPLOYMENT: ${AZURE_OPENAI_DEPLOYMENT:-}
+      AZURE_OPENAI_API_VERSION: ${AZURE_OPENAI_API_VERSION:-2024-10-21}
+    depends_on:
+      postgres:
+        condition: service_healthy
+    ports:
+      - "8001:8001"
+
+  telemetry-simulator:
+    build:
+      context: ./src/ml-service
+      dockerfile: Dockerfile
+    command: python telemetry_simulator.py
+    environment:
+      ML_BASE_URL: http://ml-service:8001
+      TELEMETRY_INTERVAL_SECONDS: "5"
+    depends_on:
+      - ml-service
