@@ -442,6 +442,14 @@ AIPROJECT/
 ├── 16.AI-Powered Customer Retention Analytics/
 ├── 17.Trip AI Agent with MCP/
 │   └── trip_buddy_agent/
+├── 18.fire-sprinkler-monitoring-ai-platform/
+├── 19.Agentic Bug Fixing/
+│   ├── app/
+│   ├── deployment/
+│   ├── docs/
+│   ├── scripts/
+│   ├── tests/
+│   └── requirements.txt
 ├── assets/
 └── README.md
 ```
