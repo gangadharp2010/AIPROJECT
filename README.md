@@ -242,6 +242,22 @@ A Python travel assistant organized around a conversational agent, travel tools,
 
 ---
 
+### 19. Agentic Bug Fixing — AI-Powered Python Repair
+
+**Domain:** Agentic AI / Developer Productivity / Automated Debugging
+
+A Gradio-based Python application that uses a LangGraph workflow and an OpenAI-backed repair chain to inspect a submitted function, execute it with supplied arguments, diagnose failures, request a proposed correction, and retry execution within a configured attempt limit.
+
+**Implemented components:** Gradio 6 interface, LangGraph workflow/state, prompt-driven repair, Python AST-based source validation, function loading and execution, unified diff rendering, execution logs, example bug scenarios, pytest tests, and Docker Compose deployment assets.
+
+**Technologies:** Python 3.12, Gradio, LangChain Core, LangChain OpenAI, LangGraph, OpenAI API, Python AST, pytest, Docker.
+
+📂 [Project folder](19.Agentic%20Bug%20Fixing/) · [Project README](19.Agentic%20Bug%20Fixing/README.md) · [Architecture](19.Agentic%20Bug%20Fixing/docs/architecture.md) · [Deployment guide](19.Agentic%20Bug%20Fixing/docs/deployment.md)
+
+> **Security note:** The current demonstration executor uses Python `exec()` and is not an isolation boundary. Do not expose it to untrusted users without a separately hardened execution sandbox.
+
+---
+
 ## 🛡️ Responsible AI & Governance
 
 ### 13. Vendor Verdict — Can We Trust This AI Tool?
@@ -299,6 +315,7 @@ A Streamlit and command-line application that coordinates specialist agents for 
 | 15 Fundamental Stock Analysis | Agentic AI / finance | Python app, Streamlit, reports |
 | 16 Customer Retention | Customer analytics | Executed notebook, model and outputs |
 | 17 Trip Buddy | Agentic AI / MCP | Python application, tests, Docker |
+| 19 Agentic Bug Fixing | Agentic AI / developer tooling | Gradio UI, LangGraph workflow, tests, Docker |
 
 ---
 
@@ -708,6 +725,7 @@ This roadmap reflects the repository structure currently checked into `main`. A 
 - [x] RAG travel-knowledge retrieval and SQLite-backed conversation memory
 - [x] Project-specific requirements, Dockerfile, and test modules for selected components
 - [x] Trustworthy-AI / vendor assessment work through Vendor Verdict AI
+- [x] Agentic Bug Fixing application with Gradio UI, LangGraph repair workflow, execution diagnostics, diff output, pytest suite, and Docker Compose assets
 
 ## 🚧 Improve consistency and completeness
 
