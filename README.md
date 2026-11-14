@@ -22,22 +22,28 @@ This repository represents my **AI/ML learning and project portfolio**, covering
 
 The projects focus on practical business and technical problems including:
 
-- 📊 Business & customer analytics
-- 📈 Predictive modeling
-- 🎯 Advertisement click prediction
-- 🚕 Ride-hailing analytics
+- 📊 Business, customer, and operational analytics
+- 📈 Predictive modeling and forecasting
+- 🎯 Advertisement click-through-rate (CTR) prediction
+- 🚕 Ride-hailing analytics and ride-completion prediction
 - 🎥 YouTube Shorts performance prediction
-- 🛒 Recommendation systems
-- 👁️ Computer vision
-- 🌍 Country segmentation
-- 🎯 Ad targeting
+- 🛒 Recommendation systems and product personalization
+- 👁️ Computer vision, object detection, and image anonymization
+- 🌍 Country segmentation and development analytics
+- 🎯 Ad targeting and audience optimization
 - 💰 Sales forecasting from campaign data
-- 🔎 Domain-specific RAG
-- 🛡️ AI governance and vendor risk assessment
+- 🔎 Domain-specific Retrieval-Augmented Generation (RAG)
+- 🛡️ AI governance, trustworthy AI, and vendor risk assessment
 - 🧠 LLM fine-tuning using LoRA / PEFT
-- 🚗 Driver drowsiness and road safety monitoring
-- 💼 Customer retention and churn analytics
+- 🚗 Driver drowsiness detection and road-safety monitoring
+- 💼 Customer retention, churn prediction, and retention analytics
 - 📈 Fundamental stock analysis and financial analytics
+- 🤖 Agentic AI applications and multi-step workflow orchestration
+- 🐞 AI-powered automated debugging and Python code repair
+- 🔄 LLM-driven error diagnosis, code correction, and execution validation
+- 🧩 LangGraph and LangChain-based agent workflows
+- 🛠️ AI-assisted developer productivity and software engineering automation
+- 🔥 Fire sprinkler device monitoring and event-driven engineering applications
 
 The overall objective is to develop **end-to-end AI solutions**, from understanding the problem and data to model development, evaluation, explainability, and deployment-oriented thinking.
 
