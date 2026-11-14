@@ -381,6 +381,12 @@ A Streamlit and command-line application that coordinates specialist agents for 
 - Model Context Protocol (MCP)
 - MCP Clients and Servers
 - Tool Calling / Tool Orchestration
+- Graph-Based Agent Workflows (LangGraph)
+- Agent State Management and Conditional Routing
+- LLM-Assisted Code Debugging and Repair
+- Python AST-Based Source Validation
+- Execution Diagnostics and Bounded Retry Loops
+- Unified Code Diff Generation
 - Conversational AI
 - Gradio
 - Hugging Face
@@ -408,11 +414,31 @@ A Streamlit and command-line application that coordinates specialist agents for 
 - AI Governance
 - Decision Confidence
 
+## 🧩 Agentic AI & Application Engineering
+
+- LangGraph
+- LangChain Core
+- LangChain OpenAI
+- Agent State and Workflow Design
+- Prompt-Based Code Repair
+- Python AST Parsing
+- Gradio Interfaces
+
+## 🧪 Software Quality & Deployment
+
+- pytest
+- Unit and Regression Testing
+- Docker
+- Docker Compose
+- Environment-Based Configuration
+- Python 3.12
+
 ## 🛠️ Development Tools
 
 - Jupyter Notebook
 - Google Colab
 - Kaggle
+- Visual Studio Code
 - Git
 - GitHub
 
@@ -535,7 +561,8 @@ Grounded Response
 | 👁️ Computer Vision | YOLOv8, image anonymization, driver safety monitoring |
 | 🧠 Deep Learning | Neural networks, vision, MobileNetV2-based classification |
 | ✨ Generative AI | LLM applications, conversational travel assistant |
-| 🧭 Agentic AI & MCP | Tool-using travel agent, MCP client and specialized servers |
+| 🧭 Agentic AI & MCP | Trip Buddy travel agent, MCP client and specialized servers |
+| 🛠️ Agentic Developer Tools | LangGraph-based Python debugging, AI repair loop, source validation, execution diagnostics and unified diffs |
 | 🔎 RAG | Domain-specific and travel-knowledge retrieval |
 | 🧬 LLM Fine-Tuning | LoRA / PEFT |
 | 🛡️ AI Governance | Vendor trust, evidence-based compliance, security and privacy assessment |
@@ -613,6 +640,28 @@ Fine-Tuning
 Evaluation
        ↓
 Adapted LLM
+```
+
+### Agentic AI → Automated Code Repair
+
+```text
+Python Function + Arguments
+          ↓
+     Source Validation
+          ↓
+      Code Execution
+          ↓
+   Error / Result Analysis
+          ↓
+    LangGraph Routing
+          ↓
+    LLM Repair Proposal
+          ↓
+   Candidate Validation
+          ↓
+      Re-execution
+          ↓
+  Code Diff + Execution Log
 ```
 
 ---
@@ -696,6 +745,12 @@ This portfolio provides hands-on experience in:
 - Object Detection
 - Driver Drowsiness Detection
 - Generative AI
+- Agentic AI and Graph-Based Workflows
+- LLM-Assisted Debugging and Code Repair
+- Python AST-Based Source Validation
+- Automated Code Execution and Diagnostics
+- Bounded Agent Retry Workflows
+- Unified Code Diff Generation
 - Retrieval-Augmented Generation
 - Vector Search
 - Embeddings
@@ -734,6 +789,9 @@ This roadmap reflects the repository structure currently checked into `main`. A 
 - [x] Project-specific requirements, Dockerfile, and test modules for selected components
 - [x] Trustworthy-AI / vendor assessment work through Vendor Verdict AI
 - [x] Agentic Bug Fixing application with Gradio UI, LangGraph repair workflow, execution diagnostics, diff output, pytest suite, and Docker Compose assets
+- [x] LangChain Core and LangChain OpenAI integration for the code-repair prompt chain
+- [x] Python AST-based source validation and bounded AI repair attempts
+- [x] Test modules for code analysis, execution, diff generation, and agent behavior
 
 ## 🚧 Improve consistency and completeness
 
@@ -748,6 +806,12 @@ This roadmap reflects the repository structure currently checked into `main`. A 
 
 ## 🎯 Planned platform and MLOps capabilities
 
+- [ ] Introduce a hardened code-execution sandbox for Agentic Bug Fixing with process/container isolation, resource limits, filesystem restrictions, and network controls
+- [ ] Add human approval before accepting or exporting AI-generated code changes
+- [ ] Add structured traces for LangGraph nodes, model calls, repair attempts, and execution outcomes
+- [ ] Create repair evaluation datasets and track fix success rate, regression rate, retries, latency, and token cost
+- [ ] Add configurable model/provider selection and resilient fallback behavior
+- [ ] Add authentication, authorization, rate limiting, and audit logging before exposing the repair UI beyond local development
 - [ ] Add experiment tracking and model registry workflows (for example, MLflow)
 - [ ] Establish CI/CD pipelines for linting, tests, builds, and deployment
 - [ ] Add end-to-end MLOps workflows for data/model versioning, reproducibility, and controlled releases
@@ -770,6 +834,7 @@ The portfolio spans the following AI engineering areas:
 | 🤖 **Machine Learning** | Predictive modeling and recommendation systems |
 | 👁️ **Deep Learning** | Computer vision and neural networks |
 | 🧠 **Generative AI** | RAG, LLMs, embeddings, fine-tuning, MCP-based agents and conversational assistants |
+| 🧭 **Agentic Developer Tools** | LangGraph workflows for AI-assisted debugging, code repair, validation, and execution feedback |
 | 🛡️ **AI Governance** | Trust and risk assessment for AI adoption |
 | 💼 **Customer Intelligence** | Retention, churn prevention, and business actionability |
 | 📈 **Financial Intelligence** | Fundamental stock analysis and company screening |
